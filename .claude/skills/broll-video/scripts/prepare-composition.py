@@ -110,8 +110,12 @@ def main():
 
     # 3. 音檔與影片
     for a in (proj / "inputs").iterdir():
-        if a.suffix.lower() in AUDIO_EXT | VIDEO_EXT and not (comp / a.name).exists():
-            shutil.copy2(a, comp / a.name)
+        # 換了新配音（同檔名）也要重新複製：比對大小與修改時間
+        dst = comp / a.name
+        if a.suffix.lower() in AUDIO_EXT | VIDEO_EXT and (
+            not dst.exists() or dst.stat().st_size != a.stat().st_size or dst.stat().st_mtime < a.stat().st_mtime
+        ):
+            shutil.copy2(a, dst)
 
     text = comp_html.read_text(encoding="utf-8")
     cfg = {}
