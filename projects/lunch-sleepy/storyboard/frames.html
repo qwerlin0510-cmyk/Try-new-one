@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Noto Sans TC";font-weight:400;src:url("../../../fonts/NotoSansTC-Regular.otf")}
+@font-face{font-family:"Noto Sans TC";font-weight:700;src:url("../../../fonts/NotoSansTC-Bold.otf")}
+@font-face{font-family:"Noto Sans TC";font-weight:900;src:url("../../../fonts/NotoSansTC-Black.otf")}
+@font-face{font-family:"Noto Color Emoji";src:url("../../../fonts/NotoColorEmoji.ttf")}
+:root{--bg:#F7F1E7;--ink:#3E302A;--r1:#D4907F;--r2:#C29A5B;--r3:#E3C29A;--r4:#8FA88A;--muted:#75665A;--hi:#FFFFFF;--card:#EFE5D6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#E2D8C9;font-family:"Noto Sans TC","Noto Color Emoji",sans-serif;color:var(--ink);padding:30px;width:1420px}
+.grid{display:grid;grid-template-columns:repeat(3,432px);gap:30px 22px}
+.cell h3{font-size:26px;margin-bottom:10px;font-weight:900}
+.wrap{width:432px;height:768px;overflow:hidden;border-radius:18px;box-shadow:0 4px 0 rgba(62,48,42,.15)}
+.f{width:1080px;height:1920px;transform:scale(.4);transform-origin:0 0;background:var(--bg);position:relative;overflow:hidden}
+.abs{position:absolute}
+.emo{font-family:"Noto Color Emoji";line-height:1}
+.title{left:65px;right:65px;top:220px;font-size:108px;font-weight:900;line-height:1.3;text-align:center}
+.hl{background:linear-gradient(transparent 55%,var(--r3) 55%,var(--r3) 92%,transparent 92%);padding:0 6px}
+.pill{display:inline-flex;align-items:center;gap:12px;white-space:nowrap;background:var(--hi);color:var(--ink);border-radius:999px;padding:13px 37px;font-size:41px;font-weight:900;box-shadow:0 4px 0 rgba(62,48,42,.12)}
+.xcard{left:65px;top:380px;width:950px;height:920px;border-radius:32px;background:var(--card);overflow:hidden}
+.tag{left:30px;top:28px;background:var(--hi);border-radius:999px;padding:10px 30px;font-size:40px;font-weight:900;box-shadow:0 3px 0 rgba(62,48,42,.12)}
+.fn{left:76px;right:76px;top:1310px;text-align:center;font-size:37px;font-weight:700;color:var(--muted)}
+.cap{left:76px;right:76px;top:1375px;height:205px;display:flex;align-items:flex-end;justify-content:center;font-size:69px;font-weight:700;text-align:center}
+.lbl{font:700 36px "Noto Sans TC";fill:var(--ink)}
+.lead{stroke:var(--ink);stroke-opacity:.7;stroke-width:3;fill:none}
+.chip{width:200px;height:220px;border-radius:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:40px;font-weight:700;box-shadow:0 4px 0 rgba(62,48,42,.12)}
+</style></head><body><div class="grid">
+
+<!-- 1 標題 -->
+<div class="cell"><h3>① 0 秒｜標題</h3><div class="wrap"><div class="f">
+  <h1 class="abs title">不吃午餐<br>也會<span class="hl">想睡</span>？</h1>
+  <div class="abs chip" style="left:400px;top:640px;width:280px;height:300px;background:var(--card);transform:rotate(-2deg)"><span class="emo" style="font-size:150px">🍱</span><span style="font-size:48px;font-weight:900">午餐</span></div>
+  <div class="abs pill" style="left:620px;top:610px;background:var(--r1)">✕ 沒吃</div>
+  <div class="abs" style="left:0;right:0;top:1030px;text-align:center"><span class="pill" style="font-size:52px"><span class="emo">🕑</span> 下午 2:00</span></div>
+  <div class="abs cap">下午兩點也會想睡</div>
+</div></div></div>
+
+<!-- 2 大腦 -->
+<div class="cell"><h3>② 15 秒｜大腦：午後低谷</h3><div class="wrap"><div class="f">
+  <div class="abs xcard">
+    <svg width="950" height="920" viewBox="0 0 950 920">
+      <!-- 頭部側面 -->
+      <path d="M300 520 C 250 380, 300 150, 500 120 C 690 95, 790 230, 770 380 C 760 450, 790 470, 800 500 C 810 520, 780 525, 770 530 C 775 560, 760 570, 750 575 C 760 600, 740 620, 700 615 C 690 650, 650 660, 600 650 L 590 700 L 380 700 C 380 620, 330 580, 300 520 Z" fill="#E8C3A8" stroke="#C99A7E" stroke-width="6"/>
+      <!-- 大腦 -->
+      <path d="M360 330 C 340 230, 430 165, 520 170 C 610 165, 700 220, 700 310 C 715 380, 660 430, 590 425 C 540 450, 470 445, 430 420 C 370 420, 345 380, 360 330 Z" fill="#E8A9A0" stroke="#C97E76" stroke-width="6"/>
+      <g stroke="#C97E76" stroke-width="5" fill="none" stroke-linecap="round">
+        <path d="M420 240 q 30 30 0 60"/><path d="M500 200 q -20 40 20 70 t 0 60"/><path d="M600 220 q 30 40 -10 70"/><path d="M650 320 q -40 10 -50 50"/><path d="M400 360 q 40 -10 60 20"/>
+      </g>
+      <!-- 主角：時鐘 -->
+      <circle cx="530" cy="310" r="62" fill="none" stroke="#fff" stroke-width="10"/>
+      <circle cx="530" cy="310" r="50" fill="#E3C29A" stroke="#3E302A" stroke-width="5"/>
+      <path d="M530 310 L 530 275 M530 310 L 560 325" stroke="#3E302A" stroke-width="7" stroke-linecap="round"/>
+      <!-- 閉一半的眼睛 -->
+      <path d="M690 400 q 25 -12 50 0" stroke="#3E302A" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- 清醒度曲線 -->
+      <rect x="60" y="640" width="830" height="250" rx="24" fill="#F7F1E7"/>
+      <text class="lbl" x="90" y="690" style="font-size:32px">清醒度</text>
+      <path d="M100 760 C 200 700, 300 690, 400 720 C 470 745, 500 820, 560 820 C 620 820, 650 735, 740 715 C 800 705, 840 730, 860 760" stroke="#3E302A" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <circle cx="560" cy="820" r="34" fill="none" stroke="#fff" stroke-width="8"/>
+      <circle cx="560" cy="820" r="16" fill="#D4907F"/>
+      <text class="lbl" x="110" y="870" style="font-size:28px;fill:#75665A">早上</text>
+      <text class="lbl" x="530" y="870" style="font-size:28px;fill:#75665A">下午</text>
+      <text class="lbl" x="800" y="870" style="font-size:28px;fill:#75665A">晚上</text>
+      <path class="lead" d="M590 805 L 680 640 L 820 640"/>
+    </svg>
+    <div class="abs tag">① 生理時鐘</div>
+    <div class="abs pill" style="right:40px;top:560px;font-size:40px">午後低谷</div>
+  </div>
+  <div class="abs fn">示意圖｜Monk, 2005</div>
+  <div class="abs cap">叫做「午後低谷」</div>
+</div></div></div>
+
+<!-- 3 胃 ×2 -->
+<div class="cell"><h3>③ 25 秒｜胃：清淡 vs 豐盛</h3><div class="wrap"><div class="f">
+  <div class="abs xcard">
+    <svg width="950" height="920" viewBox="0 0 950 920">
+      <defs><g id="stom">
+        <path d="M150 20 C 140 120, 40 150, 50 280 C 60 420, 300 440, 380 340 C 440 260, 400 140, 300 160 C 240 170, 230 90, 240 20 Z" fill="#9E4444" stroke="#7A3536" stroke-width="6"/>
+        <path d="M170 30 C 160 130, 75 160, 82 280 C 90 390, 290 405, 352 325 C 400 260, 370 175, 300 188 C 230 200, 210 110, 220 30 Z" fill="#D9837A"/>
+      </g></defs>
+      <g transform="translate(70 300) scale(.8)"><use href="#stom"/>
+        <rect x="160" y="290" width="30" height="24" rx="6" fill="#8FA88A"/><circle cx="230" cy="320" r="14" fill="#F7F1E7"/></g>
+      <g transform="translate(450 180) scale(1.12)"><use href="#stom"/>
+        <g fill="#F7F1E7"><circle cx="140" cy="260" r="16"/><circle cx="180" cy="300" r="16"/><circle cx="230" cy="280" r="16"/><circle cx="200" cy="340" r="16"/><circle cx="270" cy="320" r="16"/><circle cx="120" cy="320" r="16"/></g>
+        <g fill="#C29A5B"><rect x="150" y="220" width="30" height="24" rx="6"/><rect x="250" y="250" width="30" height="24" rx="6"/><rect x="300" y="290" width="30" height="24" rx="6"/></g>
+        <circle cx="160" cy="370" r="14" fill="#E3C29A"/><circle cx="240" cy="360" r="14" fill="#E3C29A"/></g>
+    </svg>
+    <div class="abs tag">② 午餐份量</div>
+    <div class="abs pill" style="left:140px;top:720px">清淡</div>
+    <div class="abs pill" style="left:620px;top:780px">豐盛</div>
+    <div class="abs emo" style="left:640px;top:110px;font-size:120px">😵‍💫</div>
+    <div class="abs pill" style="left:420px;top:250px;background:var(--r1)">更容易恍神</div>
+  </div>
+  <div class="abs fn">Reyner 等, 2012</div>
+  <div class="abs cap">下午更容易恍神</div>
+</div></div></div>
+
+<!-- 4 胃＋血管 -->
+<div class="cell"><h3>④ 34 秒｜第一招：吃的順序</h3><div class="wrap"><div class="f">
+  <div class="abs xcard">
+    <svg width="950" height="920" viewBox="0 0 950 920">
+      <g transform="translate(60 110) scale(.95)">
+        <path d="M150 20 C 140 120, 40 150, 50 280 C 60 420, 300 440, 380 340 C 440 260, 400 140, 300 160 C 240 170, 230 90, 240 20 Z" fill="#9E4444" stroke="#7A3536" stroke-width="6"/>
+        <path d="M170 30 C 160 130, 75 160, 82 280 C 90 390, 290 405, 352 325 C 400 260, 370 175, 300 188 C 230 200, 210 110, 220 30 Z" fill="#D9837A"/>
+      </g>
+      <!-- 血管 -->
+      <path d="M0 600 C 200 580, 700 620, 950 600 L 950 740 C 700 760, 200 720, 0 740 Z" fill="#A83A34"/>
+      <path d="M0 615 C 200 595, 700 635, 950 615 L 950 725 C 700 745, 200 705, 0 725 Z" fill="#7E1F22"/>
+      <g fill="#D9473F"><ellipse cx="100" cy="660" rx="30" ry="18"/><ellipse cx="420" cy="690" rx="30" ry="18"/><ellipse cx="760" cy="660" rx="30" ry="18"/></g>
+      <g fill="#E3C29A"><circle cx="250" cy="670" r="16"/><circle cx="580" cy="660" r="16"/></g>
+      <circle cx="580" cy="660" r="28" fill="none" stroke="#fff" stroke-width="6"/>
+      <!-- 小圖 -->
+      <rect x="500" y="110" width="400" height="330" rx="24" fill="#F7F1E7"/>
+      <text class="lbl" x="530" y="160" style="font-size:30px">飯後血糖（示意）</text>
+      <path d="M530 400 C 600 400, 620 200, 680 200 C 740 200, 760 380, 870 390" stroke="#D4907F" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M530 400 C 620 400, 660 320, 720 320 C 790 320, 820 380, 870 385" stroke="#8FA88A" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <text class="lbl" x="700" y="190" style="font-size:28px;fill:#B5655D">飯先吃</text>
+      <text class="lbl" x="735" y="310" style="font-size:28px;fill:#5E7A59">飯最後</text>
+    </svg>
+    <div class="abs tag">① 先菜肉、飯最後</div>
+    <div class="abs emo" style="left:120px;top:250px;font-size:80px">🥗</div>
+    <div class="abs emo" style="left:200px;top:330px;font-size:80px">🍗</div>
+    <div class="abs emo" style="left:150px;top:410px;font-size:80px">🍚</div>
+    <div class="abs pill" style="left:640px;top:470px;background:var(--r4)">平緩 ✓</div>
+  </div>
+  <div class="abs fn">示意｜Nishino 等, 2018</div>
+  <div class="abs cap">飯後血糖上升比較平緩</div>
+</div></div></div>
+
+<!-- 5 肌肉 -->
+<div class="cell"><h3>⑤ 41 秒｜第三招：走一走</h3><div class="wrap"><div class="f">
+  <div class="abs xcard">
+    <svg width="950" height="920" viewBox="0 0 950 920">
+      <defs><pattern id="mus" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><rect width="22" height="22" fill="#9E4444"/><rect width="6" height="22" fill="#B65A5A"/></pattern></defs>
+      <rect x="0" y="380" width="950" height="540" fill="url(#mus)"/>
+      <path d="M0 250 C 200 230, 700 270, 950 250 L 950 370 C 700 390, 200 350, 0 370 Z" fill="#A83A34"/>
+      <path d="M0 262 C 200 242, 700 282, 950 262 L 950 358 C 700 378, 200 338, 0 358 Z" fill="#7E1F22"/>
+      <g fill="#E3C29A"><circle cx="300" cy="310" r="16"/><circle cx="520" cy="470" r="16"/><circle cx="650" cy="560" r="16"/></g>
+      <circle cx="520" cy="470" r="28" fill="none" stroke="#fff" stroke-width="6"/>
+      <path d="M520 330 L 520 440" stroke="#3E302A" stroke-width="5" stroke-dasharray="10 10"/>
+      <path class="lead" d="M560 470 L 700 470 L 720 450"/>
+      <rect x="520" y="600" width="380" height="280" rx="24" fill="#F7F1E7"/>
+      <text class="lbl" x="550" y="650" style="font-size:30px">血糖（示意）</text>
+      <path d="M550 840 C 620 840, 650 680, 710 680 C 770 680, 790 820, 880 830" stroke="#D4907F" stroke-width="6" stroke-dasharray="14 10" fill="none"/>
+      <path d="M550 840 C 630 840, 670 770, 720 770 C 790 770, 820 830, 880 832" stroke="#8FA88A" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div class="abs tag">③ 飯後走一走</div>
+    <div class="abs emo" style="left:780px;top:60px;font-size:110px">🚶</div>
+    <div class="abs pill" style="left:140px;top:150px;font-size:36px">血管</div>
+    <div class="abs pill" style="left:60px;top:520px;font-size:36px">肌肉把糖用掉</div>
+  </div>
+  <div class="abs fn">Engeroff 等, 2023</div>
+  <div class="abs cap">血糖越不容易衝高</div>
+</div></div></div>
+
+<!-- 6 CTA -->
+<div class="cell"><h3>⑥ 49 秒｜結尾 CTA</h3><div class="wrap"><div class="f">
+  <div class="abs" style="left:0;right:0;top:260px;text-align:center"><span class="pill" style="font-size:44px">林柔｜健康管理教練</span></div>
+  <div class="abs" style="left:65px;right:65px;top:420px;text-align:center;font-size:88px;font-weight:900;line-height:1.3">想知道你的外食習慣<br>哪裡<span class="hl">卡住了</span>嗎？</div>
+  <div class="abs" style="left:110px;top:760px;width:860px;height:360px;border-radius:48px;background:var(--hi);display:flex;align-items:center;justify-content:center;gap:28px;box-shadow:0 6px 0 rgba(62,48,42,.12);transform:rotate(-1deg)">
+    <span class="emo" style="font-size:110px">💬</span><span style="font-size:84px;font-weight:900">留言</span>
+    <span style="background:var(--r3);border-radius:40px;padding:10px 40px;font-size:130px;font-weight:900;line-height:1.15">檢測</span>
+  </div>
+  <div class="abs" style="left:65px;right:65px;top:1170px;text-align:center;font-size:54px;font-weight:700;line-height:1.4">私訊送你 1 分鐘<br>外食習慣自我檢測！</div>
+</div></div></div>
+
+</div></body></html>
