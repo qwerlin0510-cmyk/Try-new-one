@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>脂肪到底去哪了？分鏡關鍵格</title>
+<style>
+  @font-face { font-family: "Noto Sans TC"; font-weight: 400; src: url("../../../../fonts/NotoSansTC-Regular.otf"); }
+  @font-face { font-family: "Noto Sans TC"; font-weight: 700; src: url("../../../../fonts/NotoSansTC-Bold.otf"); }
+  @font-face { font-family: "Noto Sans TC"; font-weight: 900; src: url("../../../../fonts/NotoSansTC-Black.otf"); }
+  @font-face { font-family: "Noto Color Emoji"; src: url("../../../../fonts/NotoColorEmoji.ttf"); }
+  /* 明亮版配色（使用者指定「明亮 2D 扁平」，覆蓋 design-system 的深藍底） */
+  :root {
+    --bg: #FFF4DE;      /* 奶油底 */
+    --bg2: #FDE7D2;     /* 身體城市地面 */
+    --ink: #24324A;     /* 深藍字 */
+    --muted: #6B7A8F;
+    --r1: #E76F51; --r2: #F4A261; --r3: #F2C14E; --r4: #4FA3E0;
+    --co2: #9AA5B1; --green: #7CC47F; --road: #E26D6D;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #ddd; font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; color: var(--ink); }
+  .frame { position: relative; width: 1080px; height: 1920px; background: var(--bg); overflow: hidden; margin: 0 0 40px; }
+  .frame svg.art { position: absolute; left: 0; top: 0; }
+  .head { position: absolute; left: 65px; right: 65px; top: 215px; text-align: center; }
+  .head span { display: inline-block; background: var(--ink); color: var(--bg); border-radius: 999px; padding: 16px 44px; font-size: 54px; font-weight: 900; line-height: 1.25; }
+  .title { position: absolute; left: 65px; right: 65px; top: 215px; text-align: center; font-size: 112px; font-weight: 900; line-height: 1.15; }
+  .title em { font-style: normal; color: var(--r1); }
+  .cap { position: absolute; left: 76px; right: 76px; top: 1375px; height: 205px; display: flex; align-items: flex-end; justify-content: center; text-align: center; font-size: 66px; font-weight: 700; line-height: 1.3; }
+  .sub { position: absolute; left: 76px; right: 76px; top: 1290px; text-align: center; font-size: 40px; font-weight: 700; color: var(--muted); }
+  .tag { position: absolute; left: 24px; top: 24px; font-size: 34px; font-weight: 700; color: var(--muted); background: rgba(255,255,255,.7); padding: 6px 18px; border-radius: 14px; }
+  text { font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; }
+  .emo { font-family: "Noto Color Emoji", sans-serif; }
+</style>
+</head>
+<body>
+<!-- 共用角色 -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- 油油：中心(0,0)，寬約 240 -->
+    <g id="yy">
+      <path d="M95,-10 q40,-30 70,-5 t70,-10" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M100,20 q40,-25 70,0 t70,-5" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M95,50 q40,-20 70,5 t70,0" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
+      <ellipse cx="-45" cy="-10" rx="22" ry="12" fill="#fff" opacity=".6"/>
+      <circle cx="-35" cy="30" r="11" fill="#24324A"/><circle cx="25" cy="30" r="11" fill="#24324A"/>
+      <path d="M-25,62 q20,18 40,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-62" cy="58" r="13" fill="#F4A261" opacity=".6"/><circle cx="55" cy="58" r="13" fill="#F4A261" opacity=".6"/>
+    </g>
+    <g id="yy-sleep">
+      <path d="M95,-10 q40,-30 70,-5 t70,-10" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M100,20 q40,-25 70,0 t70,-5" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M95,50 q40,-20 70,5 t70,0" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
+      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
+      <path d="M-48,30 q13,10 26,0 M12,30 q13,10 26,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
+      <text x="-30" y="-140" font-size="70" font-weight="900" fill="#6B7A8F">z</text>
+      <text x="10" y="-180" font-size="50" font-weight="900" fill="#6B7A8F">z</text>
+    </g>
+    <!-- 甘油（油油的身體，沒有尾巴） -->
+    <g id="gly">
+      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
+      <circle cx="-35" cy="30" r="11" fill="#24324A"/><circle cx="25" cy="30" r="11" fill="#24324A"/>
+      <path d="M-25,62 q20,18 40,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <!-- 脂肪酸（一條尾巴，有眼睛） -->
+    <g id="fa">
+      <path d="M0,0 q35,-28 70,0 t70,0 t70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
+      <circle cx="-2" cy="-3" r="20" fill="#E9A23B"/>
+      <circle cx="-8" cy="-6" r="5" fill="#24324A"/><circle cx="6" cy="-6" r="5" fill="#24324A"/>
+    </g>
+    <!-- 阿肥：腳底在 (0,0)，高約 620 -->
+    <g id="af">
+      <rect x="-70" y="-260" width="58" height="260" rx="22" fill="#2F3E5C"/>
+      <rect x="12" y="-260" width="58" height="260" rx="22" fill="#2F3E5C"/>
+      <ellipse cx="-42" cy="-6" rx="46" ry="20" fill="#24324A"/><ellipse cx="42" cy="-6" rx="46" ry="20" fill="#24324A"/>
+      <path d="M-105,-250 L-95,-430 Q0,-470 95,-430 L105,-250 Z" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/>
+      <path d="M0,-440 l-16,24 l16,120 l16,-120 Z" fill="#4FA3E0"/>
+      <circle cx="0" cy="-525" r="88" fill="#F5C9A6"/>
+      <path d="M-88,-540 Q-80,-630 0,-625 Q85,-630 90,-545 Q60,-585 0,-580 Q-55,-585 -88,-540 Z" fill="#3A2E2A"/>
+      <circle cx="-30" cy="-520" r="10" fill="#24324A"/><circle cx="30" cy="-520" r="10" fill="#24324A"/>
+      <path d="M-26,-480 q26,22 52,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g id="arm-l"><rect x="-150" y="-430" width="46" height="190" rx="22" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/><circle cx="-127" cy="-232" r="26" fill="#F5C9A6"/></g>
+    <g id="arm-r"><rect x="104" y="-430" width="46" height="190" rx="22" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/><circle cx="127" cy="-232" r="26" fill="#F5C9A6"/></g>
+    <!-- 電量條 -->
+    <g id="batt-frame"><rect x="0" y="0" width="300" height="120" rx="24" fill="#fff" stroke="#24324A" stroke-width="10"/><rect x="300" y="35" width="22" height="50" rx="8" fill="#24324A"/></g>
+    <!-- CO2 泡泡、水滴 -->
+    <g id="co2"><circle r="44" fill="#C9D1DA" stroke="#9AA5B1" stroke-width="6"/><text y="13" text-anchor="middle" font-size="34" font-weight="900" fill="#4A5566">CO₂</text></g>
+    <g id="h2o"><path d="M0,-48 C18,-20 34,0 34,18 A34,34 0 0 1 -34,18 C-34,0 -18,-20 0,-48 Z" fill="#4FA3E0" stroke="#2F7FBF" stroke-width="5"/><ellipse cx="-10" cy="10" rx="8" ry="12" fill="#fff" opacity=".6"/></g>
+    <g id="o2"><circle r="46" fill="#4FA3E0"/><circle cx="-15" cy="-8" r="7" fill="#fff"/><circle cx="15" cy="-8" r="7" fill="#fff"/><path d="M-14,14 q14,12 28,0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text y="-56" text-anchor="middle" font-size="34" font-weight="900" fill="#2F7FBF">O₂</text></g>
+    <g id="atp"><rect x="-60" y="-34" width="120" height="68" rx="14" fill="#F2C14E" stroke="#24324A" stroke-width="6"/><rect x="60" y="-14" width="12" height="28" rx="4" fill="#24324A"/><text y="13" text-anchor="middle" font-size="34" font-weight="900" fill="#24324A">ATP</text></g>
+  </defs>
+</svg>
+
+<!-- 1-1 -->
+<div class="frame" id="f1-1"><div class="tag">1-1　00.00 秒</div>
+  <div class="title">脂肪<br>到底去哪了？</div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="300" y="1150" width="480" height="110" rx="40" fill="#fff" stroke="#24324A" stroke-width="10"/>
+    <rect x="455" y="1170" width="170" height="64" rx="12" fill="#24324A"/>
+    <text x="540" y="1218" text-anchor="middle" font-size="48" font-weight="900" fill="#7CC47F">65.0</text>
+    <text x="760" y="1080" text-anchor="middle" font-size="56" font-weight="900" fill="#9AA5B1" text-decoration="line-through">70</text>
+    <text x="760" y="1140" text-anchor="middle" font-size="64" font-weight="900" fill="#E76F51">↓5</text>
+    <g transform="translate(540,1165) scale(.95)"><use href="#af"/><use href="#arm-l"/>
+      <g transform="rotate(-150 127 -430)"><use href="#arm-r"/></g><text x="190" y="-600" font-size="90" class="emo">👍</text></g>
+    <circle cx="330" cy="560" r="80" fill="#fff" stroke="#24324A" stroke-width="8"/>
+    <text x="330" y="595" text-anchor="middle" font-size="110" font-weight="900" fill="#E76F51">?</text>
+  </svg>
+  <div class="cap">你減掉的脂肪，到底跑去哪了？</div>
+</div>
+
+<!-- 1-2 -->
+<div class="frame" id="f1-2"><div class="tag">1-2　02.50 秒</div>
+  <div class="head"><span>A 流汗　B 上廁所　C 變肌肉</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g font-weight="900">
+      <circle cx="220" cy="560" r="150" fill="#fff" stroke="#4FA3E0" stroke-width="10"/>
+      <text x="220" y="580" text-anchor="middle" font-size="120" class="emo">💦</text>
+      <text x="220" y="660" text-anchor="middle" font-size="48" fill="#24324A">A 流汗</text>
+      <circle cx="540" cy="460" r="150" fill="#fff" stroke="#F4A261" stroke-width="10"/>
+      <text x="540" y="480" text-anchor="middle" font-size="120" class="emo">🚽</text>
+      <text x="540" y="560" text-anchor="middle" font-size="48" fill="#24324A">B 上廁所</text>
+      <circle cx="860" cy="560" r="150" fill="#fff" stroke="#E76F51" stroke-width="10"/>
+      <text x="860" y="580" text-anchor="middle" font-size="120" class="emo">💪</text>
+      <text x="860" y="660" text-anchor="middle" font-size="48" fill="#24324A">C 變肌肉</text>
+    </g>
+    <g transform="translate(540,1300) scale(.8)"><use href="#af"/><use href="#arm-l"/>
+      <g transform="rotate(-130 127 -430)"><use href="#arm-r"/></g></g>
+    <text x="640" y="800" font-size="70" class="emo">🤔</text>
+  </svg>
+  <div class="cap">流汗流掉？上廁所排掉？還是變成肌肉？</div>
+</div>
+
+<!-- 1-3 -->
+<div class="frame" id="f1-3"><div class="tag">1-3　06.08 秒</div>
+  <div class="head"><span>主要答案不在這裡！</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g stroke="#24324A" stroke-width="8" stroke-linecap="round" opacity=".5">
+      <path d="M160,430 l-40,-40 M220,410 l0,-60 M280,430 l40,-40"/>
+      <path d="M800,430 l-40,-40 M860,410 l0,-60 M920,430 l40,-40"/>
+    </g>
+    <circle cx="540" cy="860" r="380" fill="#FDE7D2" stroke="#24324A" stroke-width="14"/>
+    <clipPath id="c13"><circle cx="540" cy="860" r="372"/></clipPath>
+    <g clip-path="url(#c13)">
+      <rect x="160" y="900" width="760" height="70" fill="#E26D6D"/>
+      <rect x="250" y="700" width="160" height="180" rx="16" fill="#F2C14E"/><rect x="290" y="760" width="80" height="120" fill="#24324A" opacity=".2"/>
+      <rect x="640" y="660" width="140" height="220" rx="16" fill="#7CC47F"/>
+      <rect x="440" y="1000" width="200" height="160" rx="16" fill="#4FA3E0"/>
+      <text x="540" y="945" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">身體城市</text>
+    </g>
+    <path d="M540,480 l0,-120 M540,360 l-30,40 M540,360 l30,40" stroke="#E76F51" stroke-width="0"/>
+    <text x="540" y="430" text-anchor="middle" font-size="60" font-weight="900" fill="#E76F51">ZOOM ▼ 進入身體</text>
+  </svg>
+  <div class="cap">答案，跟你想的不一樣。</div>
+</div>
+
+<!-- 2-1 -->
+<div class="frame" id="f2-1"><div class="tag">2-1　08.14 秒</div>
+  <div class="head"><span>24小時都在耗電</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="65" y="380" width="950" height="900" rx="40" fill="#FDE7D2"/>
+    <path d="M65,800 H1015" stroke="#E26D6D" stroke-width="60"/>
+    <rect x="120" y="440" width="260" height="280" rx="24" fill="#E76F51"/><text x="250" y="610" text-anchor="middle" font-size="130" class="emo">❤️</text><text x="250" y="700" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">心臟</text>
+    <rect x="410" y="440" width="260" height="280" rx="24" fill="#B8A1E3"/><text x="540" y="610" text-anchor="middle" font-size="130" class="emo">🧠</text><text x="540" y="700" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">大腦</text>
+    <path d="M520,420 l-10,-30 M560,420 l10,-30 M540,415 v-35" stroke="#F2C14E" stroke-width="8" stroke-linecap="round"/>
+    <rect x="120" y="880" width="420" height="340" rx="24" fill="#7CC47F"/><text x="330" y="1080" text-anchor="middle" font-size="130" class="emo">💪📦</text><text x="330" y="1180" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">肌肉</text>
+    <rect x="580" y="880" width="380" height="340" rx="24" fill="#fff"/><text x="770" y="1060" text-anchor="middle" font-size="130" class="emo">😴</text><text x="770" y="1170" text-anchor="middle" font-size="44" font-weight="900" fill="#24324A">睡覺也在耗電</text>
+    <g transform="translate(730,470) scale(.75)"><use href="#batt-frame"/><rect x="14" y="14" width="150" height="92" rx="12" fill="#F4A261"/></g>
+    <text x="960" y="620" text-anchor="middle" font-size="56" font-weight="900" fill="#E76F51">▼</text>
+  </svg>
+  <div class="cap">身體隨時都在消耗能量，連睡覺都不例外。</div>
+</div>
+
+<!-- 2-2 -->
+<div class="frame" id="f2-2"><div class="tag">2-2　11.78 秒</div>
+  <div class="head"><span>能量來源：醣類＋脂肪</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g transform="translate(540,930) scale(.6)"><use href="#af"/><use href="#arm-l" transform="rotate(25 -127 -430)"/><use href="#arm-r" transform="rotate(-25 127 -430)"/></g>
+    <text x="640" y="880" font-size="70" class="emo">💨</text>
+    <g transform="translate(400,380) scale(.75)"><use href="#batt-frame"/><rect x="14" y="14" width="70" height="92" rx="12" fill="#E76F51"/></g>
+    <text x="680" y="455" font-size="60" font-weight="900" fill="#E76F51">▼▼</text>
+    <!-- 油罐車 -->
+    <g transform="translate(90,1010)">
+      <rect x="0" y="40" width="250" height="130" rx="50" fill="#fff" stroke="#24324A" stroke-width="8"/>
+      <rect x="250" y="70" width="90" height="100" rx="16" fill="#4FA3E0" stroke="#24324A" stroke-width="8"/>
+      <circle cx="70" cy="185" r="30" fill="#24324A"/><circle cx="280" cy="185" r="30" fill="#24324A"/>
+      <text x="125" y="125" text-anchor="middle" font-size="50" font-weight="900" fill="#24324A">醣類</text>
+      <text x="170" y="10" text-anchor="middle" font-size="60" class="emo">🍚</text>
+    </g>
+    <!-- 倉庫 -->
+    <g transform="translate(640,960)">
+      <path d="M0,90 L180,0 L360,90 V270 H0 Z" fill="#F2C14E" stroke="#24324A" stroke-width="8"/>
+      <rect x="110" y="140" width="140" height="130" fill="#24324A" opacity=".25"/>
+      <text x="180" y="120" text-anchor="middle" font-size="46" font-weight="900" fill="#24324A">脂肪倉庫</text>
+      <circle cx="180" cy="-40" r="34" fill="#E76F51"/><path d="M130,-80 l-20,-20 M230,-80 l20,-20 M180,-90 v-28" stroke="#E76F51" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <div class="cap">能量主要來自醣類和脂肪。</div>
+</div>
+
+<!-- 2-3 -->
+<div class="frame" id="f2-3"><div class="tag">2-3　14.02 秒</div>
+  <div class="head"><span>熱量不夠用 → 動用脂肪庫存</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="65" y="400" width="950" height="880" rx="30" fill="#F2C14E" stroke="#24324A" stroke-width="10"/>
+    <rect x="65" y="400" width="150" height="880" fill="#E9A23B" opacity=".6"/><rect x="865" y="400" width="150" height="880" fill="#E9A23B" opacity=".6"/>
+    <rect x="215" y="440" width="650" height="800" fill="#FFF4DE"/>
+    <g stroke="#B5763A" stroke-width="14"><path d="M215,740 H865 M215,1040 H865"/></g>
+    <g transform="translate(320,660) scale(.42)"><use href="#yy-sleep"/></g>
+    <g transform="translate(540,660) scale(.42)"><use href="#yy"/></g>
+    <g transform="translate(760,660) scale(.42)"><use href="#yy-sleep"/></g>
+    <g transform="translate(320,960) scale(.42)"><use href="#yy-sleep"/></g>
+    <g transform="translate(540,960) scale(.42)"><use href="#yy"/></g>
+    <g transform="translate(760,960) scale(.42)"><use href="#yy-sleep"/></g>
+    <text x="830" y="560" font-size="110" class="emo">⏰</text>
+  </svg>
+  <div class="cap">當吃進來的熱量不夠用，身體就會動用存起來的脂肪。</div>
+</div>
+
+<!-- 3-1 -->
+<div class="frame" id="f3-1"><div class="tag">3-1　18.48 秒</div>
+  <div class="head"><span>三酸甘油酯 ＝ 1甘油 ＋ 3脂肪酸</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g transform="translate(400,780) scale(1.6)"><use href="#yy"/></g>
+    <g font-weight="900" font-size="52">
+      <path d="M300,1020 L230,1110" stroke="#24324A" stroke-width="6"/><circle cx="300" cy="1020" r="10" fill="#24324A"/>
+      <rect x="90" y="1110" width="280" height="90" rx="45" fill="#F6C945" stroke="#24324A" stroke-width="6"/><text x="230" y="1172" text-anchor="middle" fill="#24324A">甘油 ×1</text>
+      <path d="M760,700 L840,600" stroke="#24324A" stroke-width="6"/><circle cx="760" cy="700" r="10" fill="#24324A"/>
+      <rect x="660" y="510" width="340" height="90" rx="45" fill="#E9A23B" stroke="#24324A" stroke-width="6"/><text x="830" y="572" text-anchor="middle" fill="#24324A">脂肪酸 ×3</text>
+    </g>
+    <g font-weight="900" font-size="80" fill="#24324A" text-anchor="middle">
+      <rect x="610" y="1040" width="110" height="110" rx="20" fill="#F6C945"/><text x="665" y="1124">1</text>
+      <text x="760" y="1124">＋</text>
+      <rect x="810" y="1040" width="110" height="110" rx="20" fill="#E9A23B"/><text x="865" y="1124">3</text>
+    </g>
+  </svg>
+  <div class="cap">脂肪細胞裡存的叫三酸甘油酯，就像一根甘油掛著三條脂肪酸。</div>
+</div>
+
+<!-- 3-2 -->
+<div class="frame" id="f3-2"><div class="tag">3-2　23.66 秒</div>
+  <div class="head"><span>荷爾蒙訊號 → 脂肪分解</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g transform="translate(120,420) rotate(-10)">
+      <rect width="330" height="210" rx="16" fill="#fff" stroke="#24324A" stroke-width="8"/>
+      <path d="M0,0 L165,110 L330,0" fill="none" stroke="#24324A" stroke-width="8"/>
+      <text x="165" y="185" text-anchor="middle" font-size="44" font-weight="900" fill="#E76F51">需要能量！</text>
+    </g>
+    <path d="M470,520 q80,-40 140,30" fill="none" stroke="#6B7A8F" stroke-width="6" stroke-dasharray="14 14"/>
+    <g transform="translate(400,920) scale(1.2)"><use href="#gly"/></g>
+    <g transform="translate(620,820) rotate(-15)"><use href="#fa"/></g>
+    <g transform="translate(640,930) rotate(5)"><use href="#fa"/></g>
+    <g transform="translate(610,1040) rotate(20)"><use href="#fa"/></g>
+    <text x="500" y="800" font-size="120" class="emo">✂️</text>
+    <text x="540" y="1230" text-anchor="middle" font-size="46" font-weight="700" fill="#6B7A8F">一條一條剪下來</text>
+  </svg>
+  <div class="cap">身體一發出「需要能量」的訊號，它就被拆開。</div>
+</div>
+
+<!-- 3-3 -->
+<div class="frame" id="f3-3"><div class="tag">3-3　26.84 秒</div>
+  <div class="head"><span>脂肪酸 → 肌肉　甘油 → 肝臟</span></div>
+  <svg class="art" width="1080" height="1920">
+    <path d="M0,760 C300,700 600,820 1080,700" stroke="#E26D6D" stroke-width="170" fill="none"/>
+    <path d="M0,760 C300,700 600,820 1080,700" stroke="#fff" stroke-width="8" stroke-dasharray="40 40" fill="none"/>
+    <path d="M0,1130 C350,1080 700,1180 1080,1100" stroke="#E26D6D" stroke-width="150" fill="none"/>
+    <text x="70" y="560" font-size="44" font-weight="900" fill="#E26D6D">血管高速公路</text>
+    <!-- 巴士 -->
+    <g transform="translate(330,640)">
+      <rect width="380" height="170" rx="36" fill="#4FA3E0" stroke="#24324A" stroke-width="8"/>
+      <rect x="20" y="20" width="340" height="70" rx="12" fill="#fff"/>
+      <g transform="translate(40,60) scale(.5)"><use href="#fa"/></g><g transform="translate(150,60) scale(.5)"><use href="#fa"/></g><g transform="translate(260,60) scale(.5)"><use href="#fa"/></g>
+      <circle cx="80" cy="175" r="32" fill="#24324A"/><circle cx="300" cy="175" r="32" fill="#24324A"/>
+    </g>
+    <g transform="translate(830,500)"><rect width="200" height="90" rx="20" fill="#7CC47F"/><text x="100" y="62" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">肌肉 ▶</text></g>
+    <!-- 小車 -->
+    <g transform="translate(260,1030)">
+      <rect width="260" height="130" rx="30" fill="#F4A261" stroke="#24324A" stroke-width="8"/>
+      <g transform="translate(130,60) scale(.35)"><use href="#gly"/></g>
+      <circle cx="60" cy="135" r="28" fill="#24324A"/><circle cx="200" cy="135" r="28" fill="#24324A"/>
+    </g>
+    <g transform="translate(830,900)"><rect width="200" height="90" rx="20" fill="#B5763A"/><text x="100" y="62" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">肝臟 ▶</text></g>
+  </svg>
+  <div class="cap">脂肪酸跟著血液，送到肌肉等需要能量的地方。</div>
+</div>
+
+<!-- 4-1 -->
+<div class="frame" id="f4-1"><div class="tag">4-1　30.72 秒</div>
+  <div class="head"><span>粒線體 ＝ 細胞發電廠</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="65" y="380" width="950" height="900" rx="60" fill="#F8D3CF" stroke="#E26D6D" stroke-width="10"/>
+    <text x="110" y="450" font-size="40" font-weight="900" fill="#C25555">肌肉細胞</text>
+    <ellipse cx="560" cy="770" rx="380" ry="230" fill="#FFB86B" stroke="#24324A" stroke-width="10"/>
+    <path d="M250,770 q50,-120 100,0 t100,0 t100,0 t100,0 t100,0 t70,0" fill="none" stroke="#E9842B" stroke-width="16"/>
+    <ellipse cx="560" cy="770" rx="420" ry="270" fill="none" stroke="#F2C14E" stroke-width="12" opacity=".6"/>
+    <rect x="330" y="470" width="460" height="90" rx="20" fill="#24324A"/>
+    <text x="560" y="532" text-anchor="middle" font-size="50" font-weight="900" fill="#F2C14E">粒線體發電廠</text>
+    <g transform="translate(130,1120) scale(.6)"><use href="#fa"/></g>
+    <g transform="translate(340,1120) scale(.6)"><use href="#fa"/></g>
+    <g transform="translate(550,1120) scale(.6)"><use href="#fa"/></g>
+    <path d="M760,1120 l60,-60" stroke="#24324A" stroke-width="8" stroke-linecap="round"/>
+    <text x="820" y="1150" font-size="44" font-weight="900" fill="#24324A">排隊進門</text>
+  </svg>
+  <div class="cap">脂肪酸來到細胞裡的發電廠：粒線體。</div>
+</div>
+
+<!-- 4-2 -->
+<div class="frame" id="f4-2"><div class="tag">4-2　34.02 秒</div>
+  <div class="head"><span>脂肪酸 ＋ 氧氣 → 燃燒</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="65" y="900" width="700" height="50" rx="25" fill="#6B7A8F"/>
+    <g fill="#24324A"><circle cx="120" cy="975" r="22"/><circle cx="300" cy="975" r="22"/><circle cx="480" cy="975" r="22"/><circle cx="660" cy="975" r="22"/></g>
+    <path d="M90,860 q35,-28 70,0 t70,0 t70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
+    <path d="M360,860 q35,-28 70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
+    <path d="M490,860 q35,-28 70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
+    <rect x="580" y="560" width="40" height="260" fill="#9AA5B1"/><path d="M540,820 h120 l-60,50 z" fill="#9AA5B1"/>
+    <text x="440" y="640" font-size="44" font-weight="900" fill="#24324A">一段一段切</text>
+    <rect x="760" y="640" width="260" height="380" rx="30" fill="#24324A"/>
+    <rect x="800" y="760" width="180" height="200" rx="20" fill="#3B4A66"/>
+    <text x="890" y="930" text-anchor="middle" font-size="150" class="emo">🔥</text>
+    <text x="890" y="720" text-anchor="middle" font-size="44" font-weight="900" fill="#F2C14E">火爐</text>
+    <g transform="translate(700,480)"><use href="#o2"/></g>
+    <g transform="translate(860,450) scale(.8)"><use href="#o2"/></g>
+    <g transform="translate(980,560) scale(.7)"><use href="#o2"/></g>
+  </svg>
+  <div class="cap">在氧氣幫忙下，它被一段一段拆解、燃燒，</div>
+</div>
+
+<!-- 4-3 -->
+<div class="frame" id="f4-3"><div class="tag">4-3　37.74 秒</div>
+  <div class="head"><span>產生能量（ATP）</span></div>
+  <svg class="art" width="1080" height="1920">
+    <ellipse cx="250" cy="760" rx="200" ry="130" fill="#FFB86B" stroke="#24324A" stroke-width="8"/>
+    <text x="250" y="775" text-anchor="middle" font-size="40" font-weight="900" fill="#24324A">粒線體</text>
+    <path d="M430,700 C560,600 650,700 720,820" fill="none" stroke="#F2C14E" stroke-width="8" stroke-dasharray="16 16"/>
+    <g transform="translate(470,620) rotate(-15)"><use href="#atp"/></g>
+    <g transform="translate(600,660) rotate(10)"><use href="#atp"/></g>
+    <g transform="translate(330,950) rotate(-5)"><use href="#atp"/></g>
+    <g transform="translate(820,1250) scale(.85)"><use href="#af"/><use href="#arm-l"/><use href="#arm-r"/></g>
+    <path d="M760,1100 l-30,40 M880,1100 l30,40" stroke="#F2C14E" stroke-width="10" stroke-linecap="round"/>
+    <g transform="translate(110,1110) scale(.75)"><use href="#batt-frame"/><rect x="14" y="14" width="250" height="92" rx="12" fill="#7CC47F"/></g>
+    <text x="400" y="1190" font-size="60" font-weight="900" fill="#7CC47F">▲</text>
+  </svg>
+  <div class="cap">變成身體可以使用的能量。</div>
+</div>
+
+<!-- 5-1 -->
+<div class="frame" id="f5-1"><div class="tag">5-1　39.82 秒</div>
+  <div class="head"><span>燒完剩下……？</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="80" y="480" width="460" height="640" rx="30" fill="#24324A"/>
+    <text x="310" y="560" text-anchor="middle" font-size="44" font-weight="900" fill="#F2C14E">發電廠後門</text>
+    <rect x="380" y="700" width="160" height="300" fill="#FFF4DE" stroke="#24324A" stroke-width="8"/>
+    <g transform="translate(650,640)"><use href="#co2"/></g><g transform="translate(780,760) scale(1.2)"><use href="#co2"/></g>
+    <g transform="translate(640,860)"><use href="#co2"/></g><g transform="translate(900,600)"><use href="#co2"/></g>
+    <g transform="translate(900,900) scale(.9)"><use href="#co2"/></g>
+    <g transform="translate(720,1010)"><use href="#h2o"/></g><g transform="translate(850,1060)"><use href="#h2o"/></g>
+    <circle cx="880" cy="420" r="70" fill="#fff" stroke="#24324A" stroke-width="8"/>
+    <text x="880" y="452" text-anchor="middle" font-size="96" font-weight="900" fill="#E76F51">?</text>
+  </svg>
+  <div class="cap">燒完之後，脂肪剩下什麼？</div>
+</div>
+
+<!-- 5-2 -->
+<div class="frame" id="f5-2"><div class="tag">5-2　42.20 秒</div>
+  <div class="head"><span>84% → 二氧化碳，呼出去</span></div>
+  <svg class="art" width="1080" height="1920">
+    <!-- 側臉 -->
+    <circle cx="260" cy="620" r="150" fill="#F5C9A6"/>
+    <path d="M110,600 Q110,450 260,450 Q400,450 410,560 Q330,510 260,520 Q170,520 110,600Z" fill="#3A2E2A"/>
+    <circle cx="320" cy="600" r="12" fill="#24324A"/>
+    <ellipse cx="402" cy="680" rx="20" ry="26" fill="#24324A"/>
+    <!-- 肺 -->
+    <path d="M200,900 C120,900 100,1080 140,1200 C170,1260 250,1250 260,1180 L260,930 Z" fill="#F4A3A3" stroke="#C25555" stroke-width="8"/>
+    <path d="M320,900 C400,900 420,1080 380,1200 C350,1260 270,1250 260,1180 L260,930 Z" fill="#F4A3A3" stroke="#C25555" stroke-width="8"/>
+    <path d="M260,780 V940" stroke="#C25555" stroke-width="16"/>
+    <g transform="translate(470,640) scale(.7)"><use href="#co2"/></g><g transform="translate(560,590) scale(.8)"><use href="#co2"/></g>
+    <g transform="translate(640,680) scale(.6)"><use href="#co2"/></g><g transform="translate(220,1060) scale(.5)"><use href="#co2"/></g><g transform="translate(300,1120) scale(.5)"><use href="#co2"/></g>
+    <!-- 圓餅 -->
+    <circle cx="790" cy="1020" r="190" fill="#E8EEF3"/>
+    <path d="M790,1020 L790,830 A190,190 0 1 1 615.6,944.6 Z" fill="#9AA5B1"/>
+    <text x="830" y="1080" text-anchor="middle" font-size="90" font-weight="900" fill="#fff">84%</text>
+  </svg>
+  <div class="cap">大約84%變成二氧化碳，從呼吸吐出去；</div>
+</div>
+
+<!-- 5-3 -->
+<div class="frame" id="f5-3"><div class="tag">5-3　46.06 秒</div>
+  <div class="head"><span>16% → 水（尿液／汗水／水氣）</span></div>
+  <svg class="art" width="1080" height="1920">
+    <circle cx="540" cy="680" r="190" fill="#9AA5B1"/>
+    <path d="M540,680 L540,490 A190,190 0 0 0 365.6,604.6 Z" fill="#4FA3E0"/>
+    <text x="460" y="590" text-anchor="middle" font-size="60" font-weight="900" fill="#fff">16%</text>
+    <text x="580" y="760" text-anchor="middle" font-size="70" font-weight="900" fill="#fff">84%</text>
+    <g font-weight="900" font-size="46" fill="#24324A" text-anchor="middle">
+      <path d="M440,900 L200,1050 M540,900 V1050 M640,900 L880,1050" stroke="#4FA3E0" stroke-width="10" stroke-dasharray="20 16"/>
+      <circle cx="200" cy="1130" r="100" fill="#fff" stroke="#4FA3E0" stroke-width="8"/><text x="200" y="1140" class="emo" font-size="80">🚽</text><text x="200" y="1270">尿液</text>
+      <circle cx="540" cy="1130" r="100" fill="#fff" stroke="#4FA3E0" stroke-width="8"/><text x="540" y="1140" class="emo" font-size="80">💦</text><text x="540" y="1270">汗水</text>
+      <circle cx="880" cy="1130" r="100" fill="#fff" stroke="#4FA3E0" stroke-width="8"/><text x="880" y="1140" class="emo" font-size="80">🌫️</text><text x="880" y="1270">呼出的水氣</text>
+    </g>
+    <g transform="translate(380,900) scale(.7)"><use href="#h2o"/></g><g transform="translate(540,960) scale(.7)"><use href="#h2o"/></g><g transform="translate(700,900) scale(.7)"><use href="#h2o"/></g>
+  </svg>
+  <div class="cap">剩下約16%變成水，透過尿液、汗水和呼吸排出。</div>
+</div>
+
+<!-- 6-1 -->
+<div class="frame" id="f6-1"><div class="tag">6-1　51.22 秒</div>
+  <div class="head"><span>脂肪主要是「呼」出去的！</span></div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="0" y="1050" width="1080" height="300" fill="#BFE3B4"/>
+    <circle cx="160" cy="900" r="110" fill="#7CC47F"/><rect x="145" y="960" width="30" height="120" fill="#B5763A"/>
+    <circle cx="930" cy="880" r="100" fill="#7CC47F"/><rect x="915" y="930" width="30" height="130" fill="#B5763A"/>
+    <g transform="translate(460,1230) scale(.85)"><use href="#af"/><use href="#arm-r"/>
+      <g transform="rotate(150 -127 -430)"><use href="#arm-l"/></g></g>
+    <g transform="translate(620,740) scale(.5)"><use href="#co2"/></g><g transform="translate(690,690) scale(.6)"><use href="#co2"/></g><g transform="translate(770,630) scale(.7)"><use href="#co2"/></g>
+    <text x="330" y="590" font-size="90" class="emo">💡</text>
+    <g transform="translate(700,420)">
+      <rect width="300" height="120" rx="60" fill="#fff" stroke="#9AA5B1" stroke-width="6"/>
+      <text x="150" y="80" text-anchor="middle" font-size="50" font-weight="900" fill="#9AA5B1">💦 流汗</text>
+      <path d="M50,62 H250" stroke="#9AA5B1" stroke-width="6"/>
+      <circle cx="300" cy="10" r="46" fill="#E76F51"/><path d="M282,-8 l36,36 M318,-8 l-36,36" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <div class="cap">所以脂肪大多是被「呼」出去的，不是流汗流掉的。</div>
+</div>
+
+<!-- 6-2 -->
+<div class="frame" id="f6-2"><div class="tag">6-2　55.04 秒</div>
+  <div class="head"><span>長期熱量赤字＝減脂關鍵</span></div>
+  <svg class="art" width="1080" height="1920">
+    <path d="M540,520 V1000" stroke="#24324A" stroke-width="16"/>
+    <path d="M440,1010 h200 l-40,-40 h-120 z" fill="#24324A"/>
+    <g transform="rotate(8 540 540)">
+      <rect x="160" y="530" width="760" height="20" rx="10" fill="#24324A"/>
+      <path d="M220,550 L150,720 M220,550 L290,720 M860,550 L790,720 M860,550 L930,720" stroke="#24324A" stroke-width="5"/>
+      <path d="M130,720 h180 a90,45 0 0 1 -180,0z" fill="#F4A261"/>
+      <path d="M770,720 h180 a90,45 0 0 1 -180,0z" fill="#7CC47F"/>
+      <text x="220" y="715" text-anchor="middle" font-size="100" class="emo">🍱</text>
+      <text x="860" y="715" text-anchor="middle" font-size="110" class="emo">🚶</text>
+      <text x="220" y="850" text-anchor="middle" font-size="50" font-weight="900" fill="#24324A">攝取</text>
+      <text x="860" y="850" text-anchor="middle" font-size="50" font-weight="900" fill="#24324A">消耗</text>
+    </g>
+    <g transform="translate(300,1180) scale(.55)"><use href="#yy"/></g>
+    <text x="380" y="1110" font-size="70" class="emo">👋</text>
+    <text x="760" y="1200" text-anchor="middle" font-size="44" font-weight="700" fill="#6B7A8F">規律走路・好好吃飯</text>
+  </svg>
+  <div class="sub">刻意大口喘氣不會多燒脂肪</div>
+  <div class="cap">長期維持熱量赤字，才是減脂的關鍵。</div>
+</div>
+</body>
+</html>
