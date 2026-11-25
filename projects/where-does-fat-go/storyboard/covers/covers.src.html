@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>封面樣張</title>
+<style>
+  @font-face { font-family: "Noto Sans TC"; font-weight: 700; src: url("../../../../fonts/NotoSansTC-Bold.otf"); }
+  @font-face { font-family: "Noto Sans TC"; font-weight: 900; src: url("../../../../fonts/NotoSansTC-Black.otf"); }
+  @font-face { font-family: "Noto Color Emoji"; src: url("../../../../fonts/NotoColorEmoji.ttf"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #ddd; font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; color: #24324A; }
+  .frame { position: relative; width: 1080px; height: 1920px; overflow: hidden; margin-bottom: 40px; }
+  .frame svg.art { position: absolute; left: 0; top: 0; }
+  text { font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; }
+  .emo { font-family: "Noto Color Emoji", sans-serif; }
+  .t { position: absolute; left: 60px; right: 60px; text-align: center; font-weight: 900; line-height: 1.12; }
+  .hl { color: #E76F51; }
+  .mark { display: inline-block; background: #24324A; color: #FFF4DE; border-radius: 22px; padding: 0 26px; }
+</style>
+</head>
+<body>
+<!-- DEFS -->
+
+<!-- 封面 A：反常識一句話＋油油吐出 CO2 -->
+<div class="frame" id="cA" style="background:#FFF4DE">
+  <div class="t" style="top:300px;font-size:76px;color:#6B7A8F">你減掉的脂肪</div>
+  <div class="t" style="top:400px;font-size:138px">大多是被你</div>
+  <div class="t" style="top:575px;font-size:165px;white-space:nowrap;letter-spacing:-0.03em"><span class="hl">「呼」</span>出去的</div>
+  <svg class="art" width="1080" height="1920">
+    <circle cx="540" cy="1230" r="330" fill="#FFE7B0" />
+    <g transform="translate(470,1330) scale(1.55)"><use href="#yy" /></g>
+    <g transform="translate(760,1090) scale(1.15)"><use href="#co2-wave" /></g>
+    <g transform="translate(880,960) scale(.85)"><use href="#co2" /></g>
+    <g transform="translate(800,860) scale(.6)"><use href="#co2" /></g>
+    <path d="M600,1290 q60,-30 90,-110" fill="none" stroke="#7A93AD" stroke-width="7" stroke-dasharray="14 12" stroke-linecap="round" />
+  </svg>
+  <div class="t" style="top:1545px;font-size:60px"><span class="mark">不是流汗流掉的！</span></div>
+</div>
+
+<!-- 封面 B：挑戰題「多數人答錯」 -->
+<div class="frame" id="cB" style="background:#FFF4DE">
+  <div class="t" style="top:300px;font-size:128px">瘦掉的脂肪</div>
+  <div class="t" style="top:450px;font-size:128px">去哪了<span class="hl">？</span></div>
+  <svg class="art" width="1080" height="1920">
+    <g transform="rotate(-4 540 660)"><rect x="370" y="605" width="340" height="110" rx="24" fill="#E76F51" />
+      <text x="540" y="680" text-anchor="middle" font-size="58" font-weight="900" fill="#fff">多數人答錯</text></g>
+    <g font-weight="900">
+      <circle cx="220" cy="940" r="135" fill="#fff" stroke="#4FA3E0" stroke-width="10" />
+      <text x="220" y="960" text-anchor="middle" font-size="105" class="emo">💦</text><text x="220" y="1035" text-anchor="middle" font-size="46" fill="#24324A">A 流汗</text>
+      <circle cx="540" cy="880" r="135" fill="#fff" stroke="#F4A261" stroke-width="10" />
+      <text x="540" y="900" text-anchor="middle" font-size="105" class="emo">🚽</text><text x="540" y="975" text-anchor="middle" font-size="46" fill="#24324A">B 上廁所</text>
+      <circle cx="860" cy="940" r="135" fill="#fff" stroke="#7CC47F" stroke-width="10" />
+      <text x="860" y="960" text-anchor="middle" font-size="105" class="emo">🫁</text><text x="860" y="1035" text-anchor="middle" font-size="46" fill="#24324A">C 呼吸</text>
+    </g>
+    <g transform="translate(540,1440) scale(1.25)"><use href="#yy-shock" /></g>
+  </svg>
+  <div class="t" style="top:1545px;font-size:60px"><span class="mark">答案會嚇到你</span></div>
+</div>
+
+<!-- 封面 C：對比 ✕ 流汗 vs ✓ 呼吸 -->
+<div class="frame" id="cC" style="background:#24324A">
+  <div class="t" style="top:300px;font-size:84px;color:#FFF4DE">減掉的脂肪去哪了？</div>
+  <svg class="art" width="1080" height="1920">
+    <rect x="60" y="460" width="465" height="560" rx="40" fill="#3B4A66" />
+    <rect x="555" y="460" width="465" height="560" rx="40" fill="#FFF4DE" />
+    <text x="292" y="700" text-anchor="middle" font-size="200" class="emo">💦</text>
+    <text x="292" y="850" text-anchor="middle" font-size="72" font-weight="900" fill="#B9C7D1">流汗</text>
+    <circle cx="292" cy="940" r="52" fill="#E76F51" /><path d="M267,915 l50,50 M317,915 l-50,50" stroke="#fff" stroke-width="12" stroke-linecap="round" />
+    <g transform="translate(700,650) scale(1.1)"><use href="#co2-wave" /></g>
+    <g transform="translate(880,560) scale(.7)"><use href="#co2" /></g>
+    <text x="787" y="850" text-anchor="middle" font-size="72" font-weight="900" fill="#24324A">呼吸</text>
+    <circle cx="787" cy="940" r="52" fill="#7CC47F" /><path d="M760,940 l18,20 l34,-40" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    <g transform="translate(540,1330) scale(1.15)"><use href="#yy" /></g>
+  </svg>
+  <div class="t" style="top:1470px;font-size:110px;color:#F2C14E">84% 呼出去</div>
+</div>
+</body>
+</html>
