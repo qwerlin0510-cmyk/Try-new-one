@@ -36,57 +36,29 @@
 <!-- 共用角色 -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <!-- 油油：中心(0,0)，寬約 240 -->
-    <g id="yy">
-      <path d="M95,-10 q40,-30 70,-5 t70,-10" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M100,20 q40,-25 70,0 t70,-5" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M95,50 q40,-20 70,5 t70,0" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
-      <ellipse cx="-45" cy="-10" rx="22" ry="12" fill="#fff" opacity=".6"/>
-      <circle cx="-35" cy="30" r="11" fill="#24324A"/><circle cx="25" cy="30" r="11" fill="#24324A"/>
-      <path d="M-25,62 q20,18 40,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
-      <circle cx="-62" cy="58" r="13" fill="#F4A261" opacity=".6"/><circle cx="55" cy="58" r="13" fill="#F4A261" opacity=".6"/>
-    </g>
-    <g id="yy-sleep">
-      <path d="M95,-10 q40,-30 70,-5 t70,-10" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M100,20 q40,-25 70,0 t70,-5" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M95,50 q40,-20 70,5 t70,0" fill="none" stroke="#E9A23B" stroke-width="18" stroke-linecap="round"/>
-      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
-      <path d="M-48,30 q13,10 26,0 M12,30 q13,10 26,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
-      <text x="-30" y="-140" font-size="70" font-weight="900" fill="#6B7A8F">z</text>
-      <text x="10" y="-180" font-size="50" font-weight="900" fill="#6B7A8F">z</text>
-    </g>
-    <!-- 甘油（油油的身體，沒有尾巴） -->
-    <g id="gly">
-      <path d="M0,-120 C70,-60 115,-10 115,40 A115,105 0 0 1 -115,40 C-115,-10 -70,-60 0,-120 Z" fill="#F6C945" stroke="#D9A21B" stroke-width="8"/>
-      <circle cx="-35" cy="30" r="11" fill="#24324A"/><circle cx="25" cy="30" r="11" fill="#24324A"/>
-      <path d="M-25,62 q20,18 40,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
-    </g>
-    <!-- 脂肪酸（一條尾巴，有眼睛） -->
-    <g id="fa">
-      <path d="M0,0 q35,-28 70,0 t70,0 t70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
-      <circle cx="-2" cy="-3" r="20" fill="#E9A23B"/>
-      <circle cx="-8" cy="-6" r="5" fill="#24324A"/><circle cx="6" cy="-6" r="5" fill="#24324A"/>
-    </g>
-    <!-- 阿肥：腳底在 (0,0)，高約 620 -->
-    <g id="af">
-      <rect x="-70" y="-260" width="58" height="260" rx="22" fill="#2F3E5C"/>
-      <rect x="12" y="-260" width="58" height="260" rx="22" fill="#2F3E5C"/>
-      <ellipse cx="-42" cy="-6" rx="46" ry="20" fill="#24324A"/><ellipse cx="42" cy="-6" rx="46" ry="20" fill="#24324A"/>
-      <path d="M-105,-250 L-95,-430 Q0,-470 95,-430 L105,-250 Z" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/>
-      <path d="M0,-440 l-16,24 l16,120 l16,-120 Z" fill="#4FA3E0"/>
-      <circle cx="0" cy="-525" r="88" fill="#F5C9A6"/>
-      <path d="M-88,-540 Q-80,-630 0,-625 Q85,-630 90,-545 Q60,-585 0,-580 Q-55,-585 -88,-540 Z" fill="#3A2E2A"/>
-      <circle cx="-30" cy="-520" r="10" fill="#24324A"/><circle cx="30" cy="-520" r="10" fill="#24324A"/>
-      <path d="M-26,-480 q26,22 52,0" fill="none" stroke="#24324A" stroke-width="7" stroke-linecap="round"/>
-    </g>
-    <g id="arm-l"><rect x="-150" y="-430" width="46" height="190" rx="22" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/><circle cx="-127" cy="-232" r="26" fill="#F5C9A6"/></g>
-    <g id="arm-r"><rect x="104" y="-430" width="46" height="190" rx="22" fill="#FFFFFF" stroke="#D5DCE5" stroke-width="6"/><circle cx="127" cy="-232" r="26" fill="#F5C9A6"/></g>
-    <!-- 電量條 -->
+    <radialGradient id="mochi" cx="40%" cy="25%" r="85%"><stop offset="0" stop-color="#FFF6D8"/><stop offset=".55" stop-color="#FBE2A0"/><stop offset="1" stop-color="#F2C46E"/></radialGradient>
+    <g id="yy"><circle cx="100.0" cy="-40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="124.0" cy="-31.8" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="-19.2" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="172.0" cy="-2.2" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="196.0" cy="19.2" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="220.0" cy="45.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="112.0" cy="0.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="137.0" cy="12.0" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="162.0" cy="28.0" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="187.0" cy="48.0" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="212.0" cy="72.0" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="237.0" cy="100.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="104.0" cy="40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="126.0" cy="57.6" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="78.4" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="170.0" cy="102.4" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="192.0" cy="129.6" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="214.0" cy="160.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><path d="M-122,62 C-132,-40 -72,-112 0,-112 C72,-112 132,-40 122,62 Q119,88 92,90 H-92 Q-119,88 -122,62 Z" fill="url(#mochi)" stroke="#A8743F" stroke-width="7"/><ellipse cx="-62" cy="-70" rx="26" ry="11" fill="#fff" opacity=".85" transform="rotate(-32 -62 -70)"/><circle cx="-30" cy="-88" r="6" fill="#fff" opacity=".85"/><ellipse cx="-78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><ellipse cx="78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><circle cx="-46" cy="26" r="15" fill="#5A3A22"/><circle cx="46" cy="26" r="15" fill="#5A3A22"/><circle cx="-41" cy="20" r="5" fill="#fff"/><circle cx="51" cy="20" r="5" fill="#fff"/><path d="M-15,46 q7.5,10 15,0 q7.5,10 15,0" fill="none" stroke="#5A3A22" stroke-width="5" stroke-linecap="round"/></g>
+    <g id="yy-walk"><g transform="translate(0,90) scale(1.12,.86) translate(0,-90)"><circle cx="100.0" cy="-40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="124.0" cy="-31.8" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="-19.2" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="172.0" cy="-2.2" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="196.0" cy="19.2" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="220.0" cy="45.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="112.0" cy="0.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="137.0" cy="12.0" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="162.0" cy="28.0" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="187.0" cy="48.0" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="212.0" cy="72.0" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="237.0" cy="100.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="104.0" cy="40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="126.0" cy="57.6" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="78.4" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="170.0" cy="102.4" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="192.0" cy="129.6" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="214.0" cy="160.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><path d="M-122,62 C-132,-40 -72,-112 0,-112 C72,-112 132,-40 122,62 Q119,88 92,90 H-92 Q-119,88 -122,62 Z" fill="url(#mochi)" stroke="#A8743F" stroke-width="7"/><ellipse cx="-62" cy="-70" rx="26" ry="11" fill="#fff" opacity=".85" transform="rotate(-32 -62 -70)"/><circle cx="-30" cy="-88" r="6" fill="#fff" opacity=".85"/><ellipse cx="-78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><ellipse cx="78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><circle cx="-46" cy="26" r="15" fill="#5A3A22"/><circle cx="46" cy="26" r="15" fill="#5A3A22"/><circle cx="-41" cy="20" r="5" fill="#fff"/><circle cx="51" cy="20" r="5" fill="#fff"/><path d="M-15,46 q7.5,10 15,0 q7.5,10 15,0" fill="none" stroke="#5A3A22" stroke-width="5" stroke-linecap="round"/></g></g>
+    <g id="yy-sleep"><circle cx="100.0" cy="-40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="124.0" cy="-31.8" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="-19.2" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="172.0" cy="-2.2" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="196.0" cy="19.2" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="220.0" cy="45.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="112.0" cy="0.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="137.0" cy="12.0" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="162.0" cy="28.0" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="187.0" cy="48.0" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="212.0" cy="72.0" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="237.0" cy="100.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="104.0" cy="40.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="126.0" cy="57.6" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="148.0" cy="78.4" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="170.0" cy="102.4" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="192.0" cy="129.6" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="214.0" cy="160.0" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><path d="M-122,62 C-132,-40 -72,-112 0,-112 C72,-112 132,-40 122,62 Q119,88 92,90 H-92 Q-119,88 -122,62 Z" fill="url(#mochi)" stroke="#A8743F" stroke-width="7"/><ellipse cx="-62" cy="-70" rx="26" ry="11" fill="#fff" opacity=".85" transform="rotate(-32 -62 -70)"/><circle cx="-30" cy="-88" r="6" fill="#fff" opacity=".85"/><ellipse cx="-78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><ellipse cx="78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><path d="M-60,28 q14,12 28,0 M32,28 q14,12 28,0" fill="none" stroke="#5A3A22" stroke-width="6" stroke-linecap="round"/><circle cx="38" cy="58" r="22" fill="#D6ECFF" stroke="#8FBCE6" stroke-width="4" opacity=".9"/><circle cx="31" cy="51" r="5" fill="#fff"/>
+      <text x="40" y="-130" font-size="60" font-weight="900" fill="#A8743F">z</text><text x="80" y="-170" font-size="42" font-weight="900" fill="#A8743F">z</text></g>
+    <g id="yy-shock"><circle cx="77.1" cy="-101.9" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="96.4" cy="-124.9" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="115.7" cy="-147.9" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="135.0" cy="-170.9" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="154.3" cy="-193.9" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="173.6" cy="-216.8" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="115.9" cy="-41.1" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="144.9" cy="-48.8" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="173.9" cy="-56.6" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="202.8" cy="-64.4" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="231.8" cy="-72.1" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="260.8" cy="-79.9" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="112.8" cy="31.0" r="13.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="141.0" cy="41.3" r="12.4" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="169.1" cy="51.6" r="11.8" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="197.3" cy="61.8" r="11.2" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="225.5" cy="72.1" r="10.6" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="253.7" cy="82.3" r="10.0" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><path d="M-122,62 C-132,-40 -72,-112 0,-112 C72,-112 132,-40 122,62 Q119,88 92,90 H-92 Q-119,88 -122,62 Z" fill="url(#mochi)" stroke="#A8743F" stroke-width="7"/><ellipse cx="-62" cy="-70" rx="26" ry="11" fill="#fff" opacity=".85" transform="rotate(-32 -62 -70)"/><circle cx="-30" cy="-88" r="6" fill="#fff" opacity=".85"/><ellipse cx="-78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><ellipse cx="78" cy="50" rx="20" ry="12" fill="#F7A1A8" opacity=".8"/><circle cx="-46" cy="22" r="20" fill="#fff" stroke="#5A3A22" stroke-width="5"/><circle cx="46" cy="22" r="20" fill="#fff" stroke="#5A3A22" stroke-width="5"/><circle cx="-46" cy="22" r="7" fill="#5A3A22"/><circle cx="46" cy="22" r="7" fill="#5A3A22"/><ellipse cx="0" cy="56" rx="11" ry="14" fill="#5A3A22"/><path d="M-120,-120 l-20,-30 M120,-120 l20,-30 M0,-140 v-36" stroke="#E76F51" stroke-width="8" stroke-linecap="round"/></g>
+    <!-- 甘油寶寶 -->
+    <g id="gly"><path d="M-70,40 C-76,-20 -42,-66 0,-66 C42,-66 76,-20 70,40 Q68,54 52,55 H-52 Q-68,54 -70,40 Z" fill="url(#mochi)" stroke="#A8743F" stroke-width="6"/>
+      <ellipse cx="-36" cy="-40" rx="14" ry="6" fill="#fff" opacity=".85" transform="rotate(-30 -36 -40)"/>
+      <circle cx="-24" cy="12" r="9" fill="#5A3A22"/><circle cx="24" cy="12" r="9" fill="#5A3A22"/><circle cx="-21" cy="9" r="3" fill="#fff"/><circle cx="27" cy="9" r="3" fill="#fff"/>
+      <ellipse cx="-44" cy="28" rx="11" ry="7" fill="#F7A1A8"/><ellipse cx="44" cy="28" rx="11" ry="7" fill="#F7A1A8"/>
+      <path d="M-8,28 q4,6 8,0 q4,6 8,0" fill="none" stroke="#5A3A22" stroke-width="3.5" stroke-linecap="round"/></g>
+    <!-- 脂肪酸毛毛蟲（頭在 0,0，往右延伸約 160） -->
+    <g id="fa"><circle cx="140.0" cy="1.5" r="15" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="112.0" cy="-6.2" r="15" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="84.0" cy="-4.8" r="15" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="56.0" cy="3.6" r="15" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="28.0" cy="6.7" r="15" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="0" cy="0" r="24" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/><circle cx="-8" cy="-3" r="4.5" fill="#5A3A22"/><circle cx="8" cy="-3" r="4.5" fill="#5A3A22"/><ellipse cx="-14" cy="8" rx="5" ry="3" fill="#F7A1A8"/><ellipse cx="14" cy="8" rx="5" ry="3" fill="#F7A1A8"/><path d="M-4,8 q4,5 8,0" fill="none" stroke="#5A3A22" stroke-width="2.5" stroke-linecap="round"/></g>
+    <!-- 阿肥（女性）：腳底在 (0,0) -->
+    <g id="af"><path d="M-104,-528 Q-112,-648 0,-648 Q112,-648 104,-528 L110,-430 Q70,-420 56,-460 L-56,-460 Q-70,-420 -110,-430 Z" fill="#4A3328"/><rect x="-68" y="-260" width="56" height="260" rx="22" fill="#2F3E5C"/><rect x="12" y="-260" width="56" height="260" rx="22" fill="#2F3E5C"/><ellipse cx="-40" cy="-6" rx="42" ry="18" fill="#C25E5E"/><ellipse cx="40" cy="-6" rx="42" ry="18" fill="#C25E5E"/><path d="M-100,-250 L-92,-425 Q0,-462 92,-425 L100,-250 Z" fill="#F6B7B0" stroke="#E89A92" stroke-width="5"/><path d="M-34,-440 L0,-395 L34,-440 Z" fill="#fff"/><circle cx="0" cy="-525" r="86" fill="#F7CDAE"/><path d="M-88,-540 Q-84,-626 0,-624 Q84,-626 88,-540 Q72,-578 30,-584 Q10,-560 -20,-586 Q-60,-584 -88,-540 Z" fill="#4A3328"/><circle cx="-30" cy="-516" r="10" fill="#5A3A22"/><circle cx="30" cy="-516" r="10" fill="#5A3A22"/><path d="M-48,-552 q18,-10 36,-2 M12,-554 q18,-8 36,2" fill="none" stroke="#4A3328" stroke-width="5" stroke-linecap="round"/><ellipse cx="-52" cy="-490" rx="14" ry="8" fill="#F7A1A8" opacity=".8"/><ellipse cx="52" cy="-490" rx="14" ry="8" fill="#F7A1A8" opacity=".8"/><path d="M-22,-482 q22,18 44,0" fill="none" stroke="#B5524F" stroke-width="6" stroke-linecap="round"/></g>
+    <g id="arm-l"><rect x="-146" y="-425" width="44" height="185" rx="22" fill="#F6B7B0" stroke="#E89A92" stroke-width="5"/><circle cx="-124" cy="-232" r="24" fill="#F7CDAE"/></g>
+    <g id="arm-r"><rect x="102" y="-425" width="44" height="185" rx="22" fill="#F6B7B0" stroke="#E89A92" stroke-width="5"/><circle cx="124" cy="-232" r="24" fill="#F7CDAE"/></g>
     <g id="batt-frame"><rect x="0" y="0" width="300" height="120" rx="24" fill="#fff" stroke="#24324A" stroke-width="10"/><rect x="300" y="35" width="22" height="50" rx="8" fill="#24324A"/></g>
-    <!-- CO2 泡泡、水滴 -->
-    <g id="co2"><circle r="44" fill="#C9D1DA" stroke="#9AA5B1" stroke-width="6"/><text y="13" text-anchor="middle" font-size="34" font-weight="900" fill="#4A5566">CO₂</text></g>
-    <g id="h2o"><path d="M0,-48 C18,-20 34,0 34,18 A34,34 0 0 1 -34,18 C-34,0 -18,-20 0,-48 Z" fill="#4FA3E0" stroke="#2F7FBF" stroke-width="5"/><ellipse cx="-10" cy="10" rx="8" ry="12" fill="#fff" opacity=".6"/></g>
+    <g id="co2"><circle r="46" fill="#D5DEE7" stroke="#8C9AAA" stroke-width="5"/><ellipse cx="-18" cy="-24" rx="10" ry="5" fill="#fff" opacity=".9" transform="rotate(-30 -18 -24)"/><text y="-8" text-anchor="middle" font-size="24" font-weight="900" fill="#5B6878">CO₂</text><circle cx="-14" cy="12" r="5" fill="#3E4A5A"/><circle cx="14" cy="12" r="5" fill="#3E4A5A"/><ellipse cx="-27" cy="22" rx="7" ry="4" fill="#F7A1A8"/><ellipse cx="27" cy="22" rx="7" ry="4" fill="#F7A1A8"/><path d="M-5,22 q5,6 10,0" fill="none" stroke="#3E4A5A" stroke-width="3" stroke-linecap="round"/></g>
+    <g id="co2-wave"><circle r="46" fill="#D5DEE7" stroke="#8C9AAA" stroke-width="5"/><ellipse cx="-18" cy="-24" rx="10" ry="5" fill="#fff" opacity=".9" transform="rotate(-30 -18 -24)"/><text y="-8" text-anchor="middle" font-size="24" font-weight="900" fill="#5B6878">CO₂</text><circle cx="-14" cy="12" r="5" fill="#3E4A5A"/><circle cx="14" cy="12" r="5" fill="#3E4A5A"/><ellipse cx="-27" cy="22" rx="7" ry="4" fill="#F7A1A8"/><ellipse cx="27" cy="22" rx="7" ry="4" fill="#F7A1A8"/><path d="M-5,22 q5,6 10,0" fill="none" stroke="#3E4A5A" stroke-width="3" stroke-linecap="round"/><path d="M40,-10 q22,-14 18,-36" fill="none" stroke="#8C9AAA" stroke-width="7" stroke-linecap="round"/><circle cx="58" cy="-48" r="9" fill="#D5DEE7" stroke="#8C9AAA" stroke-width="4"/></g>
+    <g id="h2o"><path d="M0,-48 C18,-20 34,0 34,18 A34,34 0 0 1 -34,18 C-34,0 -18,-20 0,-48 Z" fill="#7FC0EE" stroke="#2F7FBF" stroke-width="5"/><ellipse cx="-12" cy="0" rx="6" ry="10" fill="#fff" opacity=".7"/>
+      <circle cx="-9" cy="18" r="3.5" fill="#1E4E7A"/><circle cx="9" cy="18" r="3.5" fill="#1E4E7A"/></g>
     <g id="o2"><circle r="46" fill="#4FA3E0"/><circle cx="-15" cy="-8" r="7" fill="#fff"/><circle cx="15" cy="-8" r="7" fill="#fff"/><path d="M-14,14 q14,12 28,0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text y="-56" text-anchor="middle" font-size="34" font-weight="900" fill="#2F7FBF">O₂</text></g>
     <g id="atp"><rect x="-60" y="-34" width="120" height="68" rx="14" fill="#F2C14E" stroke="#24324A" stroke-width="6"/><rect x="60" y="-14" width="12" height="28" rx="4" fill="#24324A"/><text y="13" text-anchor="middle" font-size="34" font-weight="900" fill="#24324A">ATP</text></g>
   </defs>
@@ -206,14 +178,14 @@
     <rect x="65" y="400" width="150" height="880" fill="#E9A23B" opacity=".6"/><rect x="865" y="400" width="150" height="880" fill="#E9A23B" opacity=".6"/>
     <rect x="215" y="440" width="650" height="800" fill="#FFF4DE"/>
     <g stroke="#B5763A" stroke-width="14"><path d="M215,740 H865 M215,1040 H865"/></g>
-    <g transform="translate(320,660) scale(.42)"><use href="#yy-sleep"/></g>
-    <g transform="translate(540,660) scale(.42)"><use href="#yy"/></g>
-    <g transform="translate(760,660) scale(.42)"><use href="#yy-sleep"/></g>
-    <g transform="translate(320,960) scale(.42)"><use href="#yy-sleep"/></g>
-    <g transform="translate(540,960) scale(.42)"><use href="#yy"/></g>
-    <g transform="translate(760,960) scale(.42)"><use href="#yy-sleep"/></g>
-    <text x="830" y="560" font-size="110" class="emo">⏰</text>
-  </svg>
+    <g transform="translate(290,690) scale(.5)"><use href="#yy-sleep"/></g>
+    <g transform="translate(510,690) scale(.5)"><use href="#yy-sleep"/></g>
+    <g transform="translate(700,690) scale(.5)"><use href="#yy-shock"/></g>
+    <g transform="translate(290,990) scale(.5)"><use href="#yy-sleep"/></g>
+    <g transform="translate(510,990) scale(.5)"><use href="#yy-sleep"/></g>
+    <g transform="translate(700,990) scale(.5)"><use href="#yy-sleep"/></g>
+    <text x="760" y="560" font-size="110" class="emo">⏰</text>
+</svg>
   <div class="cap">當吃進來的熱量不夠用，身體就會動用存起來的脂肪。</div>
 </div>
 
@@ -247,13 +219,14 @@
       <text x="165" y="185" text-anchor="middle" font-size="44" font-weight="900" fill="#E76F51">需要能量！</text>
     </g>
     <path d="M470,520 q80,-40 140,30" fill="none" stroke="#6B7A8F" stroke-width="6" stroke-dasharray="14 14"/>
-    <g transform="translate(400,920) scale(1.2)"><use href="#gly"/></g>
-    <g transform="translate(620,820) rotate(-15)"><use href="#fa"/></g>
-    <g transform="translate(640,930) rotate(5)"><use href="#fa"/></g>
-    <g transform="translate(610,1040) rotate(20)"><use href="#fa"/></g>
-    <text x="500" y="800" font-size="120" class="emo">✂️</text>
-    <text x="540" y="1230" text-anchor="middle" font-size="46" font-weight="700" fill="#6B7A8F">一條一條剪下來</text>
-  </svg>
+    <g transform="translate(320,960) scale(1.5)"><use href="#gly"/></g>
+    <text x="320" y="1130" text-anchor="middle" font-size="46" font-weight="900" fill="#A8743F">甘油寶寶</text>
+    <g transform="translate(640,800) scale(1.3)"><use href="#fa"/></g>
+    <g transform="translate(640,930) scale(1.3)"><use href="#fa"/></g>
+    <g transform="translate(640,1060) scale(1.3)"><use href="#fa"/></g>
+    <text x="760" y="1150" text-anchor="middle" font-size="46" font-weight="900" fill="#A8743F">脂肪酸 ×3</text>
+    <text x="470" y="760" font-size="110" class="emo">✂️</text>
+</svg>
   <div class="cap">身體一發出「需要能量」的訊號，它就被拆開。</div>
 </div>
 
@@ -269,14 +242,14 @@
     <g transform="translate(330,640)">
       <rect width="380" height="170" rx="36" fill="#4FA3E0" stroke="#24324A" stroke-width="8"/>
       <rect x="20" y="20" width="340" height="70" rx="12" fill="#fff"/>
-      <g transform="translate(40,60) scale(.5)"><use href="#fa"/></g><g transform="translate(150,60) scale(.5)"><use href="#fa"/></g><g transform="translate(260,60) scale(.5)"><use href="#fa"/></g>
+      <g transform="translate(50,55) scale(.55)"><use href="#fa"/></g><g transform="translate(160,55) scale(.55)"><use href="#fa"/></g><g transform="translate(270,55) scale(.55)"><use href="#fa"/></g>
       <circle cx="80" cy="175" r="32" fill="#24324A"/><circle cx="300" cy="175" r="32" fill="#24324A"/>
     </g>
     <g transform="translate(830,500)"><rect width="200" height="90" rx="20" fill="#7CC47F"/><text x="100" y="62" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">肌肉 ▶</text></g>
     <!-- 小車 -->
     <g transform="translate(260,1030)">
       <rect width="260" height="130" rx="30" fill="#F4A261" stroke="#24324A" stroke-width="8"/>
-      <g transform="translate(130,60) scale(.35)"><use href="#gly"/></g>
+      <g transform="translate(130,58) scale(.6)"><use href="#gly"/></g>
       <circle cx="60" cy="135" r="28" fill="#24324A"/><circle cx="200" cy="135" r="28" fill="#24324A"/>
     </g>
     <g transform="translate(830,900)"><rect width="200" height="90" rx="20" fill="#B5763A"/><text x="100" y="62" text-anchor="middle" font-size="44" font-weight="900" fill="#fff">肝臟 ▶</text></g>
@@ -310,19 +283,21 @@
   <svg class="art" width="1080" height="1920">
     <rect x="65" y="900" width="700" height="50" rx="25" fill="#6B7A8F"/>
     <g fill="#24324A"><circle cx="120" cy="975" r="22"/><circle cx="300" cy="975" r="22"/><circle cx="480" cy="975" r="22"/><circle cx="660" cy="975" r="22"/></g>
-    <path d="M90,860 q35,-28 70,0 t70,0 t70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
-    <path d="M360,860 q35,-28 70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
-    <path d="M490,860 q35,-28 70,0" fill="none" stroke="#E9A23B" stroke-width="22" stroke-linecap="round"/>
-    <rect x="580" y="560" width="40" height="260" fill="#9AA5B1"/><path d="M540,820 h120 l-60,50 z" fill="#9AA5B1"/>
-    <text x="440" y="640" font-size="44" font-weight="900" fill="#24324A">一段一段切</text>
+    <g transform="translate(120,850) scale(1.2)"><use href="#fa"/></g>
+    <circle cx="540" cy="855" r="18" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/>
+    <circle cx="640" cy="800" r="18" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/>
+    <circle cx="720" cy="740" r="18" fill="#F5C66A" stroke="#A8743F" stroke-width="4"/>
+    <path d="M560,840 q50,-60 140,-100" fill="none" stroke="#A8743F" stroke-width="5" stroke-dasharray="10 10"/>
+    <rect x="460" y="600" width="36" height="210" fill="#9AA5B1"/><path d="M430,810 h96 l-48,40 z" fill="#9AA5B1"/>
+    <text x="300" y="640" font-size="44" font-weight="900" fill="#24324A">一顆一顆剪</text>
     <rect x="760" y="640" width="260" height="380" rx="30" fill="#24324A"/>
     <rect x="800" y="760" width="180" height="200" rx="20" fill="#3B4A66"/>
     <text x="890" y="930" text-anchor="middle" font-size="150" class="emo">🔥</text>
     <text x="890" y="720" text-anchor="middle" font-size="44" font-weight="900" fill="#F2C14E">火爐</text>
-    <g transform="translate(700,480)"><use href="#o2"/></g>
-    <g transform="translate(860,450) scale(.8)"><use href="#o2"/></g>
-    <g transform="translate(980,560) scale(.7)"><use href="#o2"/></g>
-  </svg>
+    <g transform="translate(640,470)"><use href="#o2"/></g>
+    <g transform="translate(800,450) scale(.8)"><use href="#o2"/></g>
+    <g transform="translate(950,520) scale(.7)"><use href="#o2"/></g>
+</svg>
   <div class="cap">在氧氣幫忙下，它被一段一段拆解、燃燒，</div>
 </div>
 
@@ -366,16 +341,18 @@
   <div class="head"><span>84% → 二氧化碳，呼出去</span></div>
   <svg class="art" width="1080" height="1920">
     <!-- 側臉 -->
-    <circle cx="260" cy="620" r="150" fill="#F5C9A6"/>
-    <path d="M110,600 Q110,450 260,450 Q400,450 410,560 Q330,510 260,520 Q170,520 110,600Z" fill="#3A2E2A"/>
-    <circle cx="320" cy="600" r="12" fill="#24324A"/>
-    <ellipse cx="402" cy="680" rx="20" ry="26" fill="#24324A"/>
+    <path d="M92,620 Q84,445 262,442 Q420,448 412,575 L300,540 Q190,560 178,700 L190,820 Q112,830 96,730 Z" fill="#4A3328"/>
+    <circle cx="260" cy="620" r="150" fill="#F7CDAE"/>
+    <path d="M150,560 Q170,450 280,452 Q400,458 412,575 Q360,520 300,535 Q230,520 150,560Z" fill="#4A3328"/>
+    <circle cx="320" cy="606" r="12" fill="#5A3A22"/><path d="M330,596 l12,-8" stroke="#5A3A22" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="300" cy="660" rx="22" ry="12" fill="#F7A1A8" opacity=".8"/>
+    <ellipse cx="402" cy="680" rx="20" ry="26" fill="#B5524F"/>
     <!-- 肺 -->
     <path d="M200,900 C120,900 100,1080 140,1200 C170,1260 250,1250 260,1180 L260,930 Z" fill="#F4A3A3" stroke="#C25555" stroke-width="8"/>
     <path d="M320,900 C400,900 420,1080 380,1200 C350,1260 270,1250 260,1180 L260,930 Z" fill="#F4A3A3" stroke="#C25555" stroke-width="8"/>
     <path d="M260,780 V940" stroke="#C25555" stroke-width="16"/>
-    <g transform="translate(470,640) scale(.7)"><use href="#co2"/></g><g transform="translate(560,590) scale(.8)"><use href="#co2"/></g>
-    <g transform="translate(640,680) scale(.6)"><use href="#co2"/></g><g transform="translate(220,1060) scale(.5)"><use href="#co2"/></g><g transform="translate(300,1120) scale(.5)"><use href="#co2"/></g>
+    <g transform="translate(480,640) scale(.8)"><use href="#co2-wave"/></g><g transform="translate(600,560) scale(1)"><use href="#co2-wave"/></g>
+    <g transform="translate(700,700) scale(.75)"><use href="#co2-wave"/></g><g transform="translate(220,1060) scale(.5)"><use href="#co2"/></g><g transform="translate(300,1120) scale(.5)"><use href="#co2"/></g>
     <!-- 圓餅 -->
     <circle cx="790" cy="1020" r="190" fill="#E8EEF3"/>
     <path d="M790,1020 L790,830 A190,190 0 1 1 615.6,944.6 Z" fill="#9AA5B1"/>
@@ -440,12 +417,33 @@
       <text x="220" y="850" text-anchor="middle" font-size="50" font-weight="900" fill="#24324A">攝取</text>
       <text x="860" y="850" text-anchor="middle" font-size="50" font-weight="900" fill="#24324A">消耗</text>
     </g>
-    <g transform="translate(300,1180) scale(.55)"><use href="#yy"/></g>
+    <g transform="translate(260,1170) scale(.6)"><use href="#yy"/></g>
     <text x="380" y="1110" font-size="70" class="emo">👋</text>
     <text x="760" y="1200" text-anchor="middle" font-size="44" font-weight="700" fill="#6B7A8F">規律走路・好好吃飯</text>
   </svg>
   <div class="sub">刻意大口喘氣不會多燒脂肪</div>
   <div class="cap">長期維持熱量赤字，才是減脂的關鍵。</div>
+</div>
+
+<div class="frame" id="charsheet" style="width:1920px;height:1240px">
+  <div style="position:absolute;left:60px;top:40px;font-size:64px;font-weight:900">角色設定：油油（新版）＋ 阿肥（女性）</div>
+  <svg class="art" width="1920" height="1240">
+    <g font-weight="900" font-size="40" fill="#24324A" text-anchor="middle">
+      <g transform="translate(200,380) scale(1.1)"><use href="#yy"/></g><text x="220" y="560">正面</text>
+      <text x="220" y="608" font-size="30" font-weight="700" fill="#6B7A8F">麻糬身體・串珠尾巴</text>
+      <g transform="translate(630,380) scale(1.1)"><use href="#yy-walk"/></g><text x="650" y="560">走路 Q 彈壓扁</text>
+      <g transform="translate(1060,380) scale(1.1)"><use href="#yy-sleep"/></g><text x="1080" y="560">睡覺・鼻涕泡泡</text>
+      <g transform="translate(1440,380) scale(1.1)"><use href="#yy-shock"/></g><text x="1460" y="560">鬧鐘嚇到・尾巴炸開</text>
+      <g transform="translate(200,860) scale(1.2)"><use href="#gly"/></g><text x="200" y="980">甘油寶寶</text>
+      <g transform="translate(400,760)"><use href="#fa"/></g><g transform="translate(400,850)"><use href="#fa"/></g><g transform="translate(400,940)"><use href="#fa"/></g>
+      <text x="480" y="1010">脂肪酸毛毛蟲 ×3</text>
+      <text x="340" y="1080" font-size="30" font-weight="700" fill="#6B7A8F">被剪開以後</text>
+      <g transform="translate(790,840) scale(1.5)"><use href="#co2-wave"/></g><text x="800" y="980">CO₂ 小泡泡揮手</text>
+      <g transform="translate(1080,860) scale(1.3)"><use href="#h2o"/></g><text x="1080" y="980">小水滴</text>
+      <g transform="translate(1450,1160) scale(.85)"><use href="#af"/><use href="#arm-l"/><use href="#arm-r"/></g>
+      <text x="1700" y="900">阿肥</text><text x="1700" y="950" font-size="30" font-weight="700" fill="#6B7A8F">減重中的上班族</text>
+    </g>
+  </svg>
 </div>
 </body>
 </html>
