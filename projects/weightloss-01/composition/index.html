@@ -82,6 +82,11 @@
       #d-gift b { color: var(--mintd); }
       #d-by { left: 0; right: 0; top: 1040px; text-align: center; font-size: 30px; font-weight: 700; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
 
+      /* 底部小字：字幕下方，半透明小膠囊 */
+      #ft { left: 50%; top: 1622px; transform: translateX(-50%); white-space: nowrap; padding: 4px 22px 7px; border-radius: 999px;
+        background: rgba(22,44,38,.55); color: rgba(255,255,255,.92); font-size: 30px; font-weight: 700; letter-spacing: .03em; }
+      #root.mode-captions #footer { opacity: 0 !important; }
+
       /* 字幕 */
       #captions p { position: absolute; left: 540px; top: 1495px; transform: translate(-50%, -50%); opacity: 0;
         padding: 10px 34px 16px; border-radius: 26px; background: var(--capbg); color: #fff;
@@ -219,10 +224,15 @@
       <!-- broll-04（47.96–55.3）：結尾（口播原有的 CTA，不另加） -->
       <section id="bandD" class="clip layer" data-start="47.96" data-duration="7.34" data-track-index="1">
         <div id="d-q" class="abs"><span>搞不清楚自己是什麼狀態？</span></div>
-        <div id="d-by" class="abs">林柔教練</div>
+        <div id="d-by" class="abs">林柔教練｜IG @zoey_510_fit.life</div>
         <div id="d-box" class="abs"><span class="emo">💬</span><span class="say">留言</span><span id="d-kw">我想瘦</span><i id="d-caret"></i></div>
         <div id="d-gift" class="abs"><span class="pill"><span class="emo">🎁</span><b>5招抗餓秘笈</b>傳給你</span></div>
       </section>
+
+      <!-- 底部小字（使用者指定，全片顯示） -->
+      <div id="footer" class="clip layer" data-start="0" data-duration="55.3" data-track-index="4">
+        <div id="ft" class="abs">Line：lin880510　預約免費諮詢了解</div>
+      </div>
 
       <!-- 字幕（prepare-composition.py 依 transcript.srt 與 project.json 產生） -->
       <div id="captions" class="clip layer" data-start="0" data-duration="55.3" data-track-index="5">
