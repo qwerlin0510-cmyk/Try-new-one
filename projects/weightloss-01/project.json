@@ -1,0 +1,14 @@
+{
+  "title": "",
+  "brand": "",
+  "mode": "B",
+  "source": "inputs/source.mp4",
+  "face_zone": {
+    "x0": 133,
+    "y0": 232,
+    "x1": 768,
+    "y1": 954,
+    "frames": 59,
+    "detected": 57
+  }
+}
