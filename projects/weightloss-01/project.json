@@ -1,8 +1,12 @@
 {
-  "title": "",
-  "brand": "",
+  "title": "真餓、假餓、微餓，你分得清嗎？",
+  "brand": "default（風格 A 清新薄荷）",
   "mode": "B",
-  "source": "inputs/source.mp4",
+  "source": {
+    "file": "inputs/source-trim.mp4",
+    "drive": "https://drive.google.com/file/d/18vA05Vk7UB1EADkebk412JuoUjeDaJNG/view",
+    "original": "inputs/source.mp4（原長 58.8 秒，55.3 秒後是空房間，已剪掉）"
+  },
   "face_zone": {
     "x0": 133,
     "y0": 232,
@@ -10,5 +14,99 @@
     "y1": 954,
     "frames": 59,
     "detected": 57
-  }
+  },
+  "speaker": {
+    "name": "林柔教練",
+    "ig": ""
+  },
+  "cta": {
+    "question": "搞不清楚自己是什麼狀態？",
+    "action": "留言「我想瘦」，我把5招抗餓秘笈傳給你喔！",
+    "keyword": "我想瘦"
+  },
+  "caption": {
+    "px": 60,
+    "line_units": 15.5,
+    "keywords": [
+      "大腦",
+      "肚子餓",
+      "瘦的訊號",
+      "第一天",
+      "突然",
+      "珍奶",
+      "炸雞",
+      "血糖波動",
+      "情緒壓力",
+      "微微的發空",
+      "精神",
+      "糖原",
+      "脂肪",
+      "能量",
+      "咕嚕咕嚕",
+      "體力",
+      "真的",
+      "假的",
+      "微餓",
+      "我想瘦",
+      "抗餓秘笈"
+    ]
+  },
+  "segments": [
+    {
+      "id": "broll-01",
+      "start": 0.0,
+      "end": 7.32,
+      "kind": "overlay",
+      "place": "胸前圖卡區",
+      "line": "標題／肚子餓還是瘦的訊號／停在第一天"
+    },
+    {
+      "id": "cut-01",
+      "start": 9.3,
+      "end": 13.04,
+      "kind": "cutaway",
+      "place": "全螢幕",
+      "line": "想吃特定的東西，像是珍奶或炸雞（自繪插畫）"
+    },
+    {
+      "id": "cut-02",
+      "start": 13.04,
+      "end": 16.9,
+      "kind": "cutaway",
+      "place": "全螢幕",
+      "line": "血糖波動或情緒壓力（示意圖表）"
+    },
+    {
+      "id": "broll-02",
+      "start": 17.0,
+      "end": 21.7,
+      "kind": "overlay",
+      "place": "胸前圖卡區",
+      "line": "真正的瘦的訊號：微微發空、不影響精神"
+    },
+    {
+      "id": "cut-03",
+      "start": 21.7,
+      "end": 27.8,
+      "kind": "cutaway",
+      "place": "全螢幕",
+      "line": "糖原快用完、脂肪當能量（剖面示意）"
+    },
+    {
+      "id": "broll-03",
+      "start": 27.8,
+      "end": 40.56,
+      "kind": "overlay",
+      "place": "胸前圖卡區",
+      "line": "真餓三徵兆／假餓三徵兆"
+    },
+    {
+      "id": "broll-04",
+      "start": 47.96,
+      "end": 55.3,
+      "kind": "overlay",
+      "place": "胸前圖卡區（CTA）",
+      "line": "留言我想瘦，5招抗餓秘笈"
+    }
+  ]
 }

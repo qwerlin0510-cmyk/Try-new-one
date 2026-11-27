@@ -1,0 +1,38 @@
+/* weightloss-01：風格 A 清新薄荷。字型路徑相對於使用此檔的頁面。 */
+@font-face { font-family: "Noto Sans TC"; font-weight: 400; src: url("../fonts/NotoSansTC-Regular.otf"); }
+@font-face { font-family: "Noto Sans TC"; font-weight: 700; src: url("../fonts/NotoSansTC-Bold.otf"); }
+@font-face { font-family: "Noto Sans TC"; font-weight: 900; src: url("../fonts/NotoSansTC-Black.otf"); }
+@font-face { font-family: "Noto Color Emoji"; src: url("../fonts/NotoColorEmoji.ttf"); }
+:root {
+  --mint: #2BB58A; --mintd: #1F9E78; --mintl: #DDF3EA; --ink: #22302B; --mute: #5E6F68;
+  --card: rgba(255, 255, 255, .94); --kw: #FFB23F; --warn: #E8664B; --capbg: rgba(22, 44, 38, .86);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+body { font-family: "Noto Sans TC", "Noto Color Emoji", sans-serif; color: var(--ink); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+.abs { position: absolute; }
+.emo { font-family: "Noto Color Emoji", sans-serif; line-height: 1; }
+
+/* 胸前白卡（臉部安全區 y 232–954 以下、字幕 1390 以上） */
+.card { left: 90px; width: 900px; top: 1000px; padding: 30px 40px 34px; border-radius: 36px;
+  background: var(--card); box-shadow: 0 18px 50px rgba(0, 0, 0, .22); }
+.card h3 { font-size: 50px; font-weight: 900; color: var(--mintd); line-height: 1.2; }
+.row { display: flex; align-items: center; gap: 20px; font-size: 48px; font-weight: 900; margin-top: 16px; line-height: 1.2; }
+.ck { width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; font-size: 40px; flex: none;
+  background: var(--mint); color: #fff; }
+.pill { display: inline-flex; align-items: center; gap: 12px; padding: 12px 30px 16px; border-radius: 999px;
+  font-size: 50px; font-weight: 900; background: var(--card); box-shadow: 0 12px 30px rgba(0, 0, 0, .2); white-space: nowrap; }
+
+/* 全螢幕插畫底 */
+.full-bg { left: 0; top: 0; width: 1080px; height: 1920px;
+  background: radial-gradient(ellipse 120% 70% at 50% 35%, #FFFFFF 0%, #EEF9F4 45%, #D3EFE3 100%); }
+.head { left: 60px; right: 60px; top: 250px; text-align: center; font-size: 88px; font-weight: 900; line-height: 1.2; }
+.head b { color: var(--mintd); }
+.fn { left: 60px; right: 60px; text-align: center; font-size: 28px; font-weight: 700; color: var(--mute); line-height: 1.4; }
+.wcard { background: #fff; border-radius: 36px; box-shadow: 0 18px 50px rgba(31, 158, 120, .18); }
+.tag { display: inline-block; font-size: 56px; font-weight: 900; color: #fff; background: var(--mint);
+  padding: 6px 36px 12px; border-radius: 999px; white-space: nowrap; }
+
+/* 字幕：深綠半透明底，一行；關鍵字橘黃 1.75 倍 */
+.kw { color: var(--kw); font-size: 1.75em; vertical-align: -0.08em; }
