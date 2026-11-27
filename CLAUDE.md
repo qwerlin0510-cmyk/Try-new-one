@@ -9,3 +9,4 @@
 - 不要把任何金鑰（API key）寫進檔案或 commit。
 - 做完一個段落就 commit，讓使用者在 GitHub 看得到；素材和成品不進 Git（見 `.gitignore`），要交給使用者的 mp4 用 `git add -f`。
 - 剛建好環境、或渲染出錯時，先跑 `bash .claude/skills/broll-video/scripts/check-setup.sh` 看缺什麼。
+- **使用者的固定偏好：AI 配音一律用 Fish Audio 聲音「溫暖治癒女青年」**（ID `e5f4ee40a2f2487f83f659766e338d2b`，模型 s2.1-pro，`--speed 1.1`），不用再問選哪個聲音。之後建立品牌時，把這個 ID 寫進 `brands/<品牌>/voice.md`。
