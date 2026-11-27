@@ -41,3 +41,11 @@ projects/*/storyboard/qa-sheet.jpg
 projects/*/storyboard/qa-final-facebox.jpg
 projects/*/composition-overlay/
 projects/*/composition-captions/
+
+# Pixabay 素材（授權不允許單獨再散布，不進 Git）
+projects/*/inputs/stock/
+projects/*/composition/assets/stock/
+projects/*/samples/styles/frame.jpg
+projects/*/samples/styles/fonts
+projects/*/samples/styles/*.png
+projects/*/samples/styles/*.jpg
